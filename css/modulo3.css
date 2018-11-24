@@ -1,0 +1,55 @@
+body {
+    background-image:url(../img/fondo.jpg);
+    background-size: 100%;
+    background-position: 50% 17%;
+}
+
+.modal-dialog, .modal-content{
+    width:  743px;
+
+}
+.modal{
+    margin-left: 22px;
+}
+table th {
+    text-align: center;
+
+}
+.table thead th {
+    vertical-align: middle;
+
+}
+.modal-content {
+    margin-left: -222px;
+}
+.form-control {
+    padding: 2px;
+}
+td {
+    width: 1px;
+}
+#adicionarFila, #btnGuararReceta{
+    float: right;
+    margin-top: -30px;
+    margin-bottom: 13px;
+    margin-right: 13px;
+}
+
+#btnGuararReceta{
+    
+    margin-top: 0px;
+  
+
+}
+
+.navbar{
+    background-color: #2b9fa0;
+}
+
+@media (max-width:719px ){
+    .contentTable {
+        margin-left: 23%;
+        width: 472px;
+        overflow-x: scroll;
+    }
+}
