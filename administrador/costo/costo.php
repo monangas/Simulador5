@@ -17,6 +17,9 @@
         background-color: #2b9fa0;
         color: #2b9fa0;
     }
+    .requerido{
+        color:red;
+    }
     @media only screen and (max-width: 600px) {
         table{
             font-size: 8px;
@@ -526,7 +529,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
+                                    <td class="requerido">
                                         SALARIO MENSUAL
                                     </td>
                                     <td ><input class="form-control" id="sm3">
@@ -543,7 +546,7 @@
                                         FECHA
                                     </td>
                                     <td>
-                                        <input class="form-control" id="fe3">
+                                        <input class="form-control" id="fe3" type="date">
                                     </td>
                                     <td>
 
@@ -561,7 +564,7 @@
                                     </th>
                                 </tr>
                                 <tr >
-                                    <td >
+                                    <td class="requerido">
                                         NUMERO DE DIAS  DEL EVENTO
                                     </td>
                                     <td >
@@ -572,7 +575,7 @@
                                     </td>
                                 </tr>
                                 <tr >
-                                    <td >
+                                    <td class="requerido">
                                         NUMERO DE HORAS DEL EVENTO
                                     </td>
                                     <td >
@@ -599,20 +602,19 @@
 
                                 </tr>
                                 <tr >
-                                    <td >
+                                    <td class="requerido" >
                                         SUBSIDIO DE TRANSPORTE
                                     </td>
                                     <td>
                                         <input class="form-control" id="sdt3">
                                     </td>
                                     <td >
-                                        DIARIO<input class="form-control" id="dia4">
+                                        DIARIO<input class="form-control" id="dia4" readonly="">
                                     </td>
                                     <td >
-                                        HORA<input class="form-control" id="ho23">
+                                        HORA<input class="form-control" id="ho23" readonly="">
                                     </td>
                                 </tr>
-
 
                                 <tr >
                                     <td colspan="4"></td>
@@ -622,115 +624,115 @@
                                 <tr>
                                     <td colspan=2 ><span class="interrogante" data-toggle="popover" data-content="SALARIO/30">?</span>SALARIO DIARIO 
                                     </td>
-                                    <td colspan=2><input class="form-control" id="sd31">
+                                    <td colspan=2><input class="form-control" id="sd31" readonly="">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td colspan=2><span class="interrogante" data-toggle="popover" data-content="SALARIO/240">?</span>HORA ORDINARIA
                                     </td>
-                                    <td colspan=2 ><input class="form-control" id="ho31">
+                                    <td colspan=2 ><input class="form-control" id="ho31" readonly="">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td colspan=2><span class="interrogante" data-toggle="popover" data-content="TODOS LOS MESES LABORALES SON DE 30 DIAS">?</span>NUMERO DE DIAS A PAGAR
                                     </td>
-                                    <td colspan=2 ><input class="form-control" id="nddap31">
+                                    <td colspan=2 ><input class="form-control" id="nddap31" readonly="">
                                     </td>
                                 </tr>
                                 <tr >
                                     <td colspan="2" >
                                         <span class="interrogante" data-toggle="popover" data-content="MAXIMO 8 HORAS DIARIAS">?</span>JORNADA DE TRABAJO
-                                        <input class="form-control" id="jdt31">
+                                        <input class="form-control" id="jdt31" value="0"  readonly="">
                                     </td>
 
                                     <td>
-                                        hora <input class="form-control" id="h1jdt31">
+                                        hora <input class="form-control" id="h1jdt31" readonly="">
                                     </td>
                                     <td>
-                                        hora <input class="form-control" id="h2jdt31">
+                                        días <input class="form-control" id="h2jdt31" readonly="">
                                     </td>
                                 </tr>
                                 <tr >
                                     <td colspan=2 >
                                         <span class="interrogante" data-toggle="popover" data-content="SI EL TURNO ESTA ENTRE LAS 9 PM Y LAS 6 AM SE CALCULAN LAS HORAS PARA DETERMINAR EL RECARGO NOCTURNO ORDINARIO">?</span>RECARGO NOCTURNO
-                                        <input class="form-control" id="rn31">
+                                        <input class="form-control" id="hhhddd1"  value="0"  readonly="">
                                     </td>
                                     <td>
-                                        hora <input class="form-control" id="h1rn31">
+                                        hora <input class="form-control" id="hhh1" oninput="operar4(1)" onfocus="vaciarhhh(1)" value="0" type="number">
                                     </td>
                                     <td>
-                                        hora <input class="form-control" id="h2rn31">
+                                        días <input class="form-control" id="ddd1" oninput="operar4(1)" onfocus="vaciarddd(1)" value="0" type="number">
                                     </td>
 
                                 </tr>
                                 <tr >
                                     <td colspan=2 > 
                                         <span class="interrogante" data-toggle="popover" data-content="SI EL TURNO ESTA ENTRE LAS 6 AM Y LAS 9 PM DE UN FESTIVO O DOMINICAL">?</span>RECARGO FESTIVO
-                                        <input class="form-control" id="rf311">
+                                        <input class="form-control" id="hhhddd2" value="0"   readonly="">
                                     </td>
                                     <td>
-                                        hora <input class="form-control" id="h1rf311">
+                                        hora <input class="form-control" id="hhh2" oninput="operar4(2)"  onfocus="vaciarhhh(2)" value="0" type="number">
                                     </td>
                                     <td>
-                                        hora <input class="form-control" id="h2rf311">
+                                        días <input class="form-control" id="ddd2" oninput="operar4(2)"  onfocus="vaciarddd(2)" value="0" type="number">
                                     </td>
                                 </tr>
                                 <tr >
                                     <td colspan=2 ><span class="interrogante" data-toggle="popover" data-content="SI EL TURNO ESTA ENTRE LAS 9 PM Y LAS 6 AM DE UN DOMINICAL O FESTIVO">?</span>RECARGO NOCTURNO FESTIVO
-                                        <input class="form-control" id="rnf312">
+                                        <input class="form-control" id="hhhddd3" value="0"   readonly="">
                                     </td>
                                     <td>
-                                        hora <input class="form-control" id="h1rnf312">
+                                        hora <input class="form-control" id="hhh3" oninput="operar4(3)"  onfocus="vaciarhhh(3)" value="0" type="number">
                                     </td>
                                     <td>
-                                        hora <input class="form-control" id="h2rnf312">
+                                        días <input class="form-control" id="ddd3" oninput="operar4(3)"  onfocus="vaciarddd(3)" value="0" type="number">
                                     </td>
                                 </tr>
                                 <tr >
                                     <td colspan=2 >
                                         <span class="interrogante" data-toggle="popover" data-content="HORARIO DE 6 AM A 9 PM DESPUES DE CUMPLIR UN TURNO DE 8 HORAS">?</span>HORAS EXTRAS DIURNAS
-                                        <input class="form-control" id="hed31">
+                                        <input class="form-control" id="hhhddd4"  value="0"  readonly="">
                                     </td>
                                     <td>
-                                        hora <input class="form-control" id="h1hed31">
+                                        hora <input class="form-control" id="hhh4" oninput="operar4(4)"  onfocus="vaciarhhh(4)"value="0" type="number">
                                     </td>
                                     <td>
-                                        hora <input class="form-control" id="h2hed31">
+                                        días <input class="form-control" id="ddd4" oninput="operar4(4)"  onfocus="vaciarddd(4)"value="0" type="number">
                                     </td>
                                 </tr>
                                 <tr >
                                     <td colspan=2 >
                                         <span class="interrogante" data-toggle="popover" data-content="HORARIO DE 9 PM A 6 AM DESPUES DE CUMPLIR UN TURNO DE 8 HORAS">?</span>HORAS EXTRAS NOCTURNAS
-                                        <input class="form-control" id="hen312">
+                                        <input class="form-control" id="hhhddd5" value="0"   readonly="">
                                     </td>
                                     <td>
-                                        hora <input class="form-control" id="h1hen312">
+                                        hora <input class="form-control" id="hhh5" oninput="operar4(5)"  onfocus="vaciarhhh(5)" value="0" type="number">
                                     </td>
                                     <td>
-                                        hora <input class="form-control" id="h2hen312">
+                                        días <input class="form-control" id="ddd5" oninput="operar4(5)"  onfocus="vaciarddd(5)" value="0" type="number">
                                     </td>
                                 </tr>
                                 <tr >
                                     <td colspan=2 >
                                         <span class="interrogante" data-toggle="popover" data-content="HORARIO DE 6 AM A 9 PM DOMINICALES O FESTIVOS DESPUES DE CUMPLIR UN TURNO DE 8 HORAS">?</span>HORAS EXTRAS DIURNAS FESTIVAS
-                                        <input class="form-control" id="hedf312">
+                                        <input class="form-control" id="hhhddd6" value="0"   readonly="">
                                     </td>
                                     <td>
-                                        hora <input class="form-control" id="h1hedf312">
+                                        hora <input class="form-control" id="hhh6" oninput="operar4(6)"  onfocus="vaciarhhh(6)" value="0" type="number">
                                     </td>
                                     <td>
-                                        hora <input class="form-control" id="h2hedf312">
+                                        días <input class="form-control" id="ddd6" oninput="operar4(6)"  onfocus="vaciarddd(6)" value="0" type="number">
                                     </td>
                                 </tr>
                                 <tr >
                                     <td colspan=2><span class="interrogante" data-toggle="popover" data-content="HORARIO DE 9 PM A 6 AM DOMINICALES O FESTIVOS  DESPUES DE CUMPLIR UN TURNO DE 8 HORAS">?</span>HORAS EXTRAS NOCTURNAS FESTIVAS
-                                        <input class="form-control" id="henf31">
+                                        <input class="form-control" id="hhhddd7" value="0"  readonly="">
                                     </td>
                                     <td>
-                                        hora <input class="form-control" id="h1henf31">
+                                        hora <input class="form-control" id="hhh7" oninput="operar4(7)"  onfocus="vaciarhhh(7)" value="0" type="number">
                                     </td>
                                     <td>
-                                        hora <input class="form-control" id="h2henf31">
+                                        días <input class="form-control" id="ddd7" oninput="operar4(7)"   onfocus="vaciarddd(7)" value="0" type="number">
                                     </td>
                                 </tr>
                                 <tr >
@@ -744,61 +746,61 @@
                                 <tr >
                                     <td colspan=2 >SALARIO
                                     </td>
-                                    <td colspan=2><input class="form-control" id="sal312">
+                                    <td colspan=2><input class="form-control" id="sal312" readonly="">
                                     </td>
                                 </tr>
                                 <tr >
                                     <td colspan=2 ><span class="interrogante" data-toggle="popover" data-content="SI EL SALARIO ES MENOR A DOS S.M.M.L.V.($ 1.562.484) $88.211 POR 30 DIAS">?</span>SUBSIDIO DE TRANSPORTE
                                     </td>
-                                    <td colspan=2 ><input class="form-control" id="sdt31">
+                                    <td colspan=2 ><input class="form-control" value="0" id="ssss0" readonly="">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td colspan=2 ><span class="interrogante" data-toggle="popover" data-content="HORA ORDINARIA*0,35*NUMERO DE HORAS*NUMERO DE DIAS">?</span>RECARGO NOCTURNO
                                     </td>
-                                    <td colspan=2 ><input class="form-control" id="rn312">
+                                    <td colspan=2 ><input class="form-control" value="0" id="ssss1" readonly="">
                                     </td>
                                 </tr>
                                 <tr >
                                     <td colspan=2 ><span class="interrogante" data-toggle="popover" data-content="HORA ORDINARIA*0,75*NUMERO DE HORAS*NUMERO DE DIAS">?</span>RECARGO FESTIVO
                                     </td>
-                                    <td colspan=2 ><input class="form-control" id="rf31">
+                                    <td colspan=2 ><input class="form-control" value="0"  id="ssss2" readonly="">
                                     </td>
                                 </tr>
                                 <tr >
                                     <td colspan=2 ><span class="interrogante" data-toggle="popover" data-content="HORA ORDINARIA*1,10*NUMERO DE HORAS*NUMERO DE DIAS">?</span>RECARGO NOCTURNO FESTIVO
                                     </td>
-                                    <td colspan=2 ><input class="form-control" id="rnf31">
+                                    <td colspan=2 ><input class="form-control" value="0" id="ssss3" readonly="">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td colspan=2 ><span class="interrogante" data-toggle="popover" data-content="HORA ORDINARIA*1,25*NUMERO DE HORAS*NUMERO DE DIAS">?</span>HORAS EXTRAS DIURNAS
                                     </td>
-                                    <td colspan=2 ><input class="form-control" id="hed312">
+                                    <td colspan=2 ><input class="form-control" value="0"  id="ssss4" readonly="">
                                     </td>
                                 </tr>
                                 <tr >
                                     <td colspan=2 ><span class="interrogante" data-toggle="popover" data-content="HORA ORDINARIA*1,75*NUMERO DE HOARS*NUMERO DE DIAS">?</span>HORAS EXTRAS NOCTURNAS
                                     </td>
-                                    <td colspan=2 ><input class="form-control" id="hen31">
+                                    <td colspan=2 ><input class="form-control" value="0"  id="ssss5" readonly="">
                                     </td>
                                 </tr>
                                 <tr >
                                     <td colspan=2 ><span class="interrogante" data-toggle="popover" data-content="HORA ORDINARIA*2*NUMERO DE HORAS*NUMERO DE DIAS">?</span>HORAS EXTRAS DIURNAS FESTIVAS
                                     </td>
-                                    <td colspan=2 ><input class="form-control" id="hedf31">
+                                    <td colspan=2 ><input class="form-control" value="0"  id="ssss6" readonly="">
                                     </td>
                                 </tr>
                                 <tr >
                                     <td colspan=2><span class="interrogante" data-toggle="popover" data-content="HORA ORDINARIA*2.5*NUMERO DE HORAS*NUMERO DE DIAS">?</span>HORAS EXTRAS NOCTURNAS FESTIVAS
                                     </td>
-                                    <td colspan=2><input class="form-control" id="henf312">
+                                    <td colspan=2><input class="form-control" value="0" id="ssss7" readonly="">
                                     </td>
                                 </tr>
                                 <tr >
                                     <td colspan=2 >TOTAL DEVENGADO
                                     </td>
-                                    <td colspan=2 ><input class="form-control" id="td31">
+                                    <td colspan=2 ><input class="form-control totales" id="td31" readonly="">
                                     </td>
                                 </tr>
                                 <tr >
@@ -806,33 +808,32 @@
                                     </td>
                                 </tr>
                                 <tr >
-                                    <th colspan=2 >DEDUCCIONES (EMPLEADO)
+                                    <th colspan=4 >DEDUCCIONES (EMPLEADO)
                                     </th>
-                                    <td colspan=2 ><input class="form-control" id="deduccion31">
-                                    </td>
+
                                 </tr>
                                 <tr >
                                     <td colspan=2 ><span class="interrogante" data-toggle="popover" data-content="(TOTAL DEVENGADO-SUBSIDIO DE TRANSPORTE)*0,04">?</span>SALUD
                                     </td>
-                                    <td colspan=2 ><input class="form-control" id="salud31">
+                                    <td colspan=2 ><input class="form-control" id="salud31" readonly="">
                                     </td>
                                 </tr>
                                 <tr >
                                     <td colspan=2><span class="interrogante" data-toggle="popover" data-content="(TOTAL DEVENGADO-SUBSIDIO DE TRANSPORTE)*0,04">?</span>PENSION
                                     </td>
-                                    <td colspan=2><input class="form-control" id="pension31">
+                                    <td colspan=2><input class="form-control" id="pension31" readonly="">
                                     </td>
                                 </tr>
                                 <tr >
                                     <td colspan=2 >TOTAL DEDUCCIONES
                                     </td>
-                                    <td colspan=2><input class="form-control" id="tdeduccion31">
+                                    <td colspan=2><input class="form-control totales" id="tdeduccion31" readonly="">
                                     </td>
                                 </tr>
                                 <tr >
                                     <td colspan=2 >TOTAL A PAGAR
                                     </td>
-                                    <td colspan=2 ><input class="form-control" id="tap31">
+                                    <td colspan=2 ><input class="form-control totales" id="tap31" readonly="">
                                     </td>
                                 </tr>
                                 <tr >
@@ -847,43 +848,43 @@
                                 <tr >
                                     <td colspan=2 ><span class="interrogante" data-toggle="popover" data-content="(TOTAL DEVENGADO - TOTAL SUBSIDIO DE TRANSPORTE)*0,085">?</span>SALUD
                                     </td>
-                                    <td colspan=2 ><input class="form-control" id="salud312" >
+                                    <td colspan=2 ><input class="form-control" readonly="" id="aaaa1" >
                                     </td>
                                 </tr>
                                 <tr >
                                     <td colspan=2 ><span class="interrogante" data-toggle="popover" data-content="(TOTAL DEVENGADO - TOTAL SUBSIDIO DE TRANSPORTE)*0,12">?</span>PENSION
                                     </td>
-                                    <td colspan=2 ><input class="form-control" id="pension3121">
+                                    <td colspan=2 ><input class="form-control" readonly="" id="aaaa2">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td colspan=2 ><span class="interrogante" data-toggle="popover" data-content="(TOTAL DEVENGADO - TOTAL SUBSIDIO DE TRANSPORTE)*0,00522">?</span>ARL RIESGO I
                                     </td>
-                                    <td colspan=2 ><input class="form-control" id="arI31">
+                                    <td colspan=2 ><input class="form-control" readonly="" id="aaaa3">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td colspan=2 ><span class="interrogante" data-toggle="popover" data-content="(TOTAL DEVENGADO - TOTAL SUBSIDIO DE TRANSPORTE)*0,02">?</span>SENA
                                     </td>
-                                    <td colspan=2 ><input class="form-control" id="sena31">
+                                    <td colspan=2 ><input class="form-control" readonly="" id="aaaa4">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td colspan=2 ><span class="interrogante" data-toggle="popover" data-content="(TOTAL DEVENGADO - TOTAL SUBSIDIO DE TRANSPORTE)*0,03">?</span>ICBF
                                     </td>
-                                    <td colspan=2 ><input class="form-control" id="icbf31">
+                                    <td colspan=2 ><input class="form-control" readonly="" id="aaaa5">
                                     </td>
                                 </tr>
                                 <tr >
                                     <td colspan=2 ><span class="interrogante" data-toggle="popover" data-content="(TOTAL DEVENGADO - TOTAL SUBSIDIO DE TRANSPORTE)*0,04">?</span>CAJA DE COMPENSACION
                                     </td>
-                                    <td  colspan=2 ><input class="form-control" id="cdc31">
+                                    <td  colspan=2 ><input class="form-control" readonly="" id="aaaa6">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td colspan=2 >TOTAL APORTES EMPRESA
                                     </td>
-                                    <td colspan=2 ><input class="form-control" id="tae31">
+                                    <td colspan=2 ><input class="form-control totales" readonly="" id="tae31">
                                     </td>
                                 </tr>
                                 <tr>
@@ -896,37 +897,37 @@
                                 <tr >
                                     <td colspan=2 ><span class="interrogante" data-toggle="popover" data-content="TOTAL DEVENGADO*0,0833">?</span>CESANTIA
                                     </td>
-                                    <td colspan=2><input class="form-control" id="cesantia31">
+                                    <td colspan=2><input class="form-control" id="cesantia31" readonly="" >
                                     </td>
                                 </tr>
                                 <tr >
                                     <td colspan=2 ><span class="interrogante" data-toggle="popover" data-content="TOTAL DEVENGADO*0,0833">?</span>PRIMA DE SERVICIOS
                                     </td>
-                                    <td colspan=2 ><input class="form-control" id="pds31">
+                                    <td colspan=2 ><input class="form-control" id="pds31" readonly="" >
                                     </td>
                                 </tr>
                                 <tr >
                                     <td colspan=2 ><span class="interrogante" data-toggle="popover" data-content="TOTAL DEVENGADO*0,01">?</span>INTERESES DE CESANTIA
                                     </td>
-                                    <td colspan=2 ><input class="form-control" id="idc31">
+                                    <td colspan=2 ><input class="form-control" id="idc31" readonly="" >
                                     </td>
                                 </tr>
                                 <tr >
                                     <td colspan=2 ><span class="interrogante" data-toggle="popover" data-content="TOTAL SALARIO A PAGAR*0,0417">?</span>VACACIONES
                                     </td>
-                                    <td colspan=2 ><input class="form-control" id="vacaciones31">
+                                    <td colspan=2 ><input class="form-control" id="vacaciones31" readonly="" >
                                     </td>
                                 </tr>
                                 <tr >
-                                    <td  colspan=2 >DOTACION
+                                    <td  colspan=2 ><span class="interrogante" data-toggle="popover" data-content="se requiere el dato de Dotaciones (TOTAL DOTACIÓN HORA)">?</span>DOTACION
                                     </td>
-                                    <td colspan=2 ><input class="form-control" id="dotaciones31">
+                                    <td colspan=2 ><input class="form-control" id="dotaciones31" readonly="" >
                                     </td>
                                 </tr>
                                 <tr >
                                     <td colspan=2 >TOTAL PROVISIONES
                                     </td>
-                                    <td colspan=2><input class="form-control" id="tp31">
+                                    <td colspan=2><input class="form-control totales" id="tp31" readonly="" >
                                     </td>
                                 </tr>
                             </table>
@@ -1907,6 +1908,25 @@
         $("#sm3").on('input', function () {
             operar2();
         });
+        $("#ndhde3").on('input', function () {
+            operador3();
+        });
+        $("#sdt3").on('input', function () {
+            var sdt3 = parseFloat($("#sdt3").val());
+            $("#dia4").val(sdt3 / 30);
+            $("#ho23").val(sdt3 / 240);
+            var ho23 = parseFloat($("#ho23").val());
+            var ndhde3 = parseFloat($("#ndhde3").val());
+
+            var ho31 = parseFloat($("#ho31").val());
+            $("#ssss0").val(ndhde3 * ho23);
+            
+
+        operar5();
+        });
+
+
+
     });
     function operar() {
         var salariom = parseFloat($("#salariom").val());
@@ -1985,17 +2005,128 @@
         var nddde3 = parseFloat($("#nddde3").val());
         $("#nddap31").val(nddde3);
         var nddap31 = parseFloat($("#nddap31").val());
-        
-        $("#ho31").val(sm3/240);
+
+        $("#ho31").val(sm3 / 240);
         var ho31 = parseFloat($("#ho31").val());
-
-
 
         $("#sd31").val(sm3 / 30);
         var sd31 = parseFloat($("#sd31").val());
 
-        $("#sal312").val(sd31);
+        $("#sal312").val(sd31 * nddap31);
         var sal312 = parseFloat($("#sal312").val());
 
+
+
+
+
     }
+    function operador3() {
+
+        var ndhde3 = parseFloat($("#ndhde3").val());
+        var nddde3 = parseFloat($("#nddde3").val());
+
+
+        $("#h2jdt31").val(nddde3);
+        var h2jdt31 = parseFloat($("#h2jdt31").val());
+
+        $("#h1jdt31").val(ndhde3);
+        var h1jdt31 = parseFloat($("#h1jdt31").val());
+
+        $("#jdt31").val(h1jdt31 * h2jdt31);
+        var jdt31 = parseFloat($("#jdt31").val());
+
+    }
+    function operar4(i) {
+        var a = parseFloat($("#hhh" + i).val());
+        var b = parseFloat($("#ddd" + i).val());
+        $("#hhhddd" + i).val(a * b);
+        var hhhddd = parseFloat($("#hhhddd" + i).val());
+        var ho31 = parseFloat($("#ho31").val());
+
+        var por=0;
+        if(i==1){
+           por=0.35;
+        }else if(i==2){
+            por=0.75;
+        }else if(i==3){
+            por=1.1;
+        }else if(i==4){
+            por=1.25;
+        }else if(i==5){
+            por=1.75;
+        }else if(i==6){
+            por=2;
+        }else if(i==7){
+            por=2.5;
+        }
+        $("#ssss" + i).val(ho31 * por * hhhddd);
+
+        operador3();
+        operar5();
+    }
+    function operar5() {
+
+
+        var v = 0;
+        for (i = 0; i < 8; i++) {
+
+            v = v + parseFloat($("#ssss" + i).val());
+        }
+        var sal312 = parseFloat($("#sal312").val());
+        v = v + sal312;
+        var ssss0 = parseFloat($("#ssss0").val());
+        $("#td31").val(v);
+        var td31 = parseFloat($("#td31").val());
+
+        $("#salud31").val((td31 - ssss0) * 0.04);
+        var salud31 = parseFloat($("#salud31").val());
+        $("#pension31").val((td31 - ssss0) * 0.04)
+        var pension31 = parseFloat($("#pension31").val());
+        $("#tdeduccion31").val(salud31 + pension31);
+        var tdeduccion31 = parseFloat($("#tdeduccion31").val());
+        $("#tap31").val(td31 - tdeduccion31);
+        
+        $("#aaaa1").val((td31-ssss0)*0.085);
+        var aaaa1=parseFloat($("#aaaa1").val());
+         $("#aaaa2").val((td31-ssss0)*0.12);
+        var aaaa2=parseFloat($("#aaaa2").val());
+         $("#aaaa3").val((td31-ssss0)*0.00522);
+        var aaaa3=parseFloat($("#aaaa3").val());
+         $("#aaaa4").val((td31-ssss0)*0.02);
+        var aaaa4=parseFloat($("#aaaa4").val());
+         $("#aaaa5").val((td31-ssss0)*0.03);
+        var aaaa5=parseFloat($("#aaaa5").val());
+         $("#aaaa6").val((td31-ssss0)*0.04);
+        var aaaa6=parseFloat($("#aaaa6").val());
+        $("#tae31").val(aaaa1+aaaa2+aaaa3+aaaa4+aaaa5+aaaa6);
+        var tae31=parseFloat($("#tae31").val());
+        
+        $("#cesantia31").val(td31*0.0833);
+        var cesantia31=parseFloat();
+        $("#pds31").val(td31*0.0833);
+        var pds31=parseFloat();
+        $("#idc31").val(td31*0.01);
+        var idc31=parseFloat();
+        $("#vacaciones31").val(td31*0.0417);
+        var vacaciones31=parseFloat();
+        var h1jdt31=parseFloat($("#h1jdt31").val());
+        //pendiente por trabajar la variable de dotación(TOTAL DOTACION HORA) para multiplicar por h1jdt31
+        $("#dotaciones31").val(0*h1jdt31);
+        var dotaciones31=parseFloat();
+        $("#tp31").val(cesantia31+pds31+idc31+vacaciones31+dotaciones31);
+        
+        
+        
+        
+        
+        
+    }
+    function vaciarhhh(i) {
+        $("#hhh" + i).val("");
+    }
+    function vaciarddd(i) {
+        $("#ddd" + i).val("");
+    }
+
+
 </script>
