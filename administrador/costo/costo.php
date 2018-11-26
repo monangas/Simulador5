@@ -973,20 +973,20 @@
                                     <td colspan="5"><input type="text" class="form-control" id="nombre2"></td>
                                 </tr>
                                 <tr>
-                                    <td>salario mensual (s.m.m.l.v.)</td>
+                                    <td class="requerido">salario mensual (s.m.m.l.v.)</td>
                                     <td align="right"><input type="text" class="form-control" id="salariom"></td>
                                     <td colspan="4">condicionante:    se liquida siempre sobre el s.m.m.l.v.</td>
 
                                 </tr>
                                 <tr>
-                                    <td>subsidio de transporte</td>
+                                    <td class="requerido">subsidio de transporte</td>
                                     <td align="right" > <input type="text" class="form-control" id="sdt"></td>
                                     <td colspan="4"></td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">fecha<input type="date" class="form-control" id="fecha3"></td>
-                                    <td colspan="2">ordinario<input type="text" class="form-control" id="ordinario1"></td>
-                                    <td colspan="2">dominical<input type="text" class="form-control" id="dominical1"></td>
+                                    <td colspan="2">ordinario<input type="checkbox" class="form-control" id="ordinario1"></td>
+                                    <td colspan="2">dominical<input type="checkbox" class="form-control" id="dominical1"></td>
                                 </tr>
                                 <tr>
                                     <td colspan="3">horario de trabajo<input type="text" class="form-control" id="hdt1"></td>
@@ -1022,7 +1022,10 @@
                                 <tr>
                                     <td>jornada de trabajo</td>
                                     <td >turno de 8 horas</td>
-                                    <td colspan="4">($)<input type="text" class="form-control" id="jdt1" value="0"></td>
+                                    <td class="requerido">Horas</td>
+                                    <td><input type="number" class="form-control" id="hh0" oninput="operar()" ></td>
+                                    <td></td>
+                                    <td></td>
                                 </tr>
                                 <tr>
 
@@ -1030,35 +1033,63 @@
                                 </tr>
                                 <tr>
                                     <td>recargo nocturno</td>
-                                    <td colspan="5">si el turno esta entre    las 9 pm y las 6 am</td>
+                                    <td>si el turno esta entre    las 9 pm y las 6 am</td>
+                                    <td>Horas</td>
+                                    <td><input type="number" class="form-control" id="hh1"  value="0"></td>
+                                    <td>Días</td>
+                                    <td><input type="number" class="form-control" id="dd1"  oninput="operar()" value="0"></td>
 
                                 </tr>
                                 <tr>
                                     <td>recargo festivo </td>
-                                    <td colspan="5">si    el turno esta entre las 6 am y las 9 pm de un festivo o dinical</td>
+                                    <td>si    el turno esta entre las 6 am y las 9 pm de un festivo o dinical</td>
+                                    <td>Horas</td>
+                                    <td><input type="number" class="form-control" id="hh2"  value="0"></td>
+                                    <td>Días</td>
+                                    <td><input type="number" class="form-control" id="dd2"  oninput="operar()" value="0"></td>
                                 </tr>
                                 <tr>
                                     <td>recargo nocturno festivo</td>
-                                    <td colspan="5">si    el turno esta entre las 9 pm y las 6 am de un dominical o festivo</td>
+                                    <td>si    el turno esta entre las 9 pm y las 6 am de un dominical o festivo</td>
+                                    <td>Horas</td>
+                                    <td><input type="number" class="form-control" id="hh3" value="0"></td>
+                                    <td>Días</td>
+                                    <td><input type="number" class="form-control" id="dd3"  value="0" oninput="operar()"></td>
                                 </tr>
                                 <tr>
                                     <td>horas extras diurnas</td>
-                                    <td colspan="5">horario de 6 am a 9 pm</td>
+                                    <td>horario de 6 am a 9 pm</td>
+                                    <td>Horas</td>
+                                    <td><input type="number" class="form-control" id="hh4" value="0"></td>
+                                    <td>Días</td>
+                                    <td><input type="number" class="form-control" id="dd4"  value="0" oninput="operar()"></td>
 
                                 </tr>
                                 <tr>
                                     <td>horas extras nocturnas</td>
-                                    <td colspan="5">horario de 9 pm a 6 am</td>
+                                    <td>horario de 9 pm a 6 am</td>
+                                    <td>Horas</td>
+                                    <td><input type="number" class="form-control" id="hh5" value="0"></td>
+                                    <td>Días</td>
+                                    <td><input type="number" class="form-control" id="dd5"  value="0" oninput="operar()"></td>
 
                                 </tr>
                                 <tr>
                                     <td>horas extras diurnas festivas</td>
-                                    <td colspan="5">horario de 6 am a 9 pm    dominicales o festivos</td>
+                                    <td>horario de 6 am a 9 pm    dominicales o festivos</td>
+                                    <td>Horas</td>
+                                    <td><input type="number" class="form-control" id="hh6" value="0"></td>
+                                    <td>Días</td>
+                                    <td><input type="number" class="form-control" id="dd6"  value="0" oninput="operar()"></td>
 
                                 </tr>
                                 <tr>
                                     <td>horas extras nocturnas    festivas</td>
-                                    <td colspan="5">horario de 9 pm a 6 am    dominicales o festivos</td>
+                                    <td >horario de 9 pm a 6 am    dominicales o festivos</td>
+                                    <td>Horas</td>
+                                    <td><input type="number" class="form-control" id="hh7" value="0"></td>
+                                    <td>Días</td>
+                                    <td><input type="number" class="form-control" id="dd7"  value="0" oninput="operar()"></td>
 
                                 </tr>
                             </table>
@@ -1087,44 +1118,44 @@
                                 <tr>
                                     <td>recargo    nocturno </td>
                                     <td>$<input type="text"  class="form-control" id="rnm1" value="0" oninput="operar()"></td>
-                                    <td>$<input type="text"  class="form-control" id="rnd1" value="0" readonly=""></td>
-                                    <td>$<input type="text"  class="form-control" id="rnh1" value="0" readonly=""></td>
+                                    <td>$<input type="text"  class="form-control" id="add1" value="0" readonly=""></td>
+                                    <td>$<input type="text"  class="form-control" id="ahh1" value="0" readonly=""></td>
                                 </tr>
                                 <tr>
                                     <td><span class="interrogante" data-toggle="popover" data-content="HORA ORDINARIA*0,75*NUMERO DE HORAS*NUMERO DE DIAS">?</span>recargo    festivo</td>
                                     <td>$<input type="text"  class="form-control" id="rfm1" value="0" oninput="operar()"></td>
-                                    <td>$<input type="text"  class="form-control" id="rfd1" value="0" readonly=""></td>
-                                    <td>$<input type="text"  class="form-control" id="rfh1" value="0" readonly=""></td>
+                                    <td>$<input type="text"  class="form-control" id="add2" value="0" readonly=""></td>
+                                    <td>$<input type="text"  class="form-control" id="ahh2" value="0" readonly=""></td>
                                 </tr>
                                 <tr>
                                     <td><span class="interrogante" data-toggle="popover" data-content="HORA ORDINARIA*1,10*NUMERO DE HORAS*NUMERO DE DIAS">?</span>recargo    nocturno festivo</td>
                                     <td>$<input type="text" class="form-control" id="rnfm1" value="0" oninput="operar()"></td>
-                                    <td>$<input type="text"  class="form-control" id="rnfd1" value="0" readonly=""></td>
-                                    <td>$<input type="text"  class="form-control" id="rnfh1" value="0" readonly=""></td>
+                                    <td>$<input type="text"  class="form-control" id="add3" value="0" readonly=""></td>
+                                    <td>$<input type="text"  class="form-control" id="ahh3" value="0" readonly=""></td>
                                 </tr>
                                 <tr>
                                     <td><span class="interrogante" data-toggle="popover" data-content="HORA ORDINARIA*1,25*NUMERO DE HORAS*NUMERO DE DIAS">?</span>horas extras    diurnas</td>
                                     <td>$<input type="text" class="form-control" id="hedm1" value="0" oninput="operar()"></td>
-                                    <td>$<input type="text"  class="form-control" id="hedd1" value="0" readonly=""></td>
-                                    <td>$<input type="text"  class="form-control" id="hedh1" value="0" readonly=""></td>
+                                    <td>$<input type="text"  class="form-control" id="add4" value="0" readonly=""></td>
+                                    <td>$<input type="text"  class="form-control" id="ahh4" value="0" readonly=""></td>
                                 </tr>
                                 <tr>
                                     <td><span class="interrogante" data-toggle="popover" data-content="HORA ORDINARIA*1,75*NUMERO DE HOARS*NUMERO DE DIAS">?</span>horas extras    nocturnas</td>
                                     <td>$<input type="text"  class="form-control" id="henm1" value="0" oninput="operar()"></td>
-                                    <td>$<input type="text"  class="form-control" id="hend1" value="0" readonly=""></td>
-                                    <td>$<input type="text"  class="form-control" id="henh1" value="0" readonly=""></td>
+                                    <td>$<input type="text"  class="form-control" id="add5" value="0" readonly=""></td>
+                                    <td>$<input type="text"  class="form-control" id="ahh5" value="0" readonly=""></td>
                                 </tr>
                                 <tr>
                                     <td><span class="interrogante" data-toggle="popover" data-content="HORA ORDINARIA*2*NUMERO DE HORAS*NUMERO DE DIAS">?</span>horas extras    diurnas festivas</td>
                                     <td>$<input type="text" class="form-control" id="hedfm1" value="0" oninput="operar()"></td>
-                                    <td>$<input type="text"  class="form-control" id="hedfd1" value="0" readonly=""></td>
-                                    <td>$<input type="text"  class="form-control" id="hedfh1" value="0" readonly=""></td>
+                                    <td>$<input type="text"  class="form-control" id="add6" value="0" readonly=""></td>
+                                    <td>$<input type="text"  class="form-control" id="ahh6" value="0" readonly=""></td>
                                 </tr>
                                 <tr>
                                     <td><span class="interrogante" data-toggle="popover" data-content="HORA ORDINARIA*2.5*NUMERO DE HORAS*NUMERO DE DIAS">?</span>horas extras    nocturnas festivas</td>
                                     <td>$<input type="text"  class="form-control" id="henfm1" value="0" oninput="operar()"></td>
-                                    <td>$<input type="text"  class="form-control" id="henfd1" value="0" readonly=""></td>
-                                    <td>$<input type="text"  class="form-control" id="henfh1" value="0" readonly=""></td>
+                                    <td>$<input type="text"  class="form-control" id="add7" value="0" readonly=""></td>
+                                    <td>$<input type="text"  class="form-control" id="ahh7" value="0" readonly=""></td>
                                 </tr>
                                 <tr>
                                     <td>total devengado</td>
@@ -1956,48 +1987,100 @@
         var hedfm1 = parseFloat($("#hedfm1").val());
         var henfm1 = parseFloat($("#henfm1").val());
 
-        $("#rnd1").val(rnm1 / 30);
-        var rnd1 = parseFloat($("#rnd1").val());
-        $("#rfd1").val(rfm1 / 30);
-        var rfd1 = parseFloat($("#rfd1").val());
-        $("#rnfd1").val(rnfm1 / 30);
-        var rnfd1 = parseFloat($("#rnfd1").val());
-        $("#hedd1").val(hedm1 / 30);
-        var hedd1 = parseFloat($("#hedd1").val());
-        $("#hend1").val(henm1 / 30);
-        var hend1 = parseFloat($("#hend1").val());
-        $("#hedfd1").val(hedfm1 / 30);
-        var hedfd1 = parseFloat($("#hedfd1").val());
-        $("#henfd1").val(henfm1 / 30);
-        var henfd1 = parseFloat($("#henfd1").val());
 
-        $("#rnh1").val(rnd1 / 8);
-        var rnh1 = parseFloat($("#rnh1").val());
-        $("#rfh1").val(rfd1 / 8);
-        var rfh1 = parseFloat($("#rfh1").val());
-        $("#rnfh1").val(rnfd1 / 8);
-        var rnfh1 = parseFloat($("#rnfh1").val());
-        $("#hedh1").val(hedd1 / 8);
-        var hedh1 = parseFloat($("#hedh1").val());
-        $("#henh1").val(hend1 / 8);
-        var henh1 = parseFloat($("#henh1").val());
-        $("#hedfh1").val(hedfd1 / 8);
-        var hedfh1 = parseFloat($("#hedfh1").val());
-        $("#henfh1").val(henfd1 / 8);
-        var henfh1 = parseFloat($("#henfh1").val());
-
+        var ho1=parseFloat( $("#ho1").val());
+        var hh1=parseFloat( $("#hh1").val());
+        var dd1=parseFloat( $("#dd1").val());
+ 
+        $("#add1").val(ho1*hh1*dd1*0.35);
+        var add1 = parseFloat($("#add1").val());
+        $("#ahh1").val(add1/8);
+        var ahh1=parseFloat($("#ahh1").val());
+        
+        var hh2=parseFloat( $("#hh2").val());
+        var dd2=parseFloat( $("#dd2").val());
+        $("#add2").val(ho1*hh2*dd2*0.75);
+        var add2 = parseFloat($("#add2").val());
+       $("#ahh2").val(add2/8);
+        var ahh2=parseFloat($("#ahh2").val()); 
+       
+        var hh3=parseFloat( $("#hh3").val());
+        var dd3=parseFloat( $("#dd3").val());
+        $("#add3").val(ho1*hh3*dd3*1.1);
+        var add3 = parseFloat($("#add3").val());
+        $("#ahh3").val(add3/8);
+        var ahh3=parseFloat($("#ahh3").val());
+        
+      
+        var hh4=parseFloat( $("#hh4").val());
+        var dd4=parseFloat( $("#dd4").val());
+        $("#add4").val(ho1*hh4*dd4*1.25);
+        var add4 = parseFloat($("#add4").val());
+        $("#ahh4").val(add4/8);
+        var ahh4=parseFloat($("#ahh4").val());
+    
+        var hh5=parseFloat( $("#hh5").val());
+        var dd5=parseFloat( $("#dd5").val());
+        $("#add5").val(ho1*hh5*dd5*1.75);
+        var add5 = parseFloat($("#add5").val());
+        $("#ahh5").val(add5/8);
+        var ahh5=parseFloat($("#ahh5").val());
+      
+        var hh6=parseFloat( $("#hh6").val());
+        var dd6=parseFloat( $("#dd6").val());
+        $("#add6").val(ho1*hh6*dd6*2);
+        var add6 = parseFloat($("#add6").val());
+        $("#ahh6").val(add6/8);
+        var ahh6=parseFloat($("#ahh6").val());
+        
+        var hh7=parseFloat( $("#hh7").val());
+        var dd7=parseFloat( $("#dd7").val());
+        $("#add7").val(ho1*hh7*dd7*2.5);
+        var add7 = parseFloat($("#add7").val());
+        $("#ahh7").val(add7/8);
+        var ahh7=parseFloat($("#ahh7").val());
 
         $("#tdm1").val(salariom + sdt + rnm1 + rfm1 + rnfm1 + hedm1 + henm1 + hedfm1 + henfm1);
         var tdm1 = parseFloat($("#tdm1").val());
 
+
         $("#vdtm1").val(tdm1);
         var vdtm1 = parseFloat($("#vdtm1").val());
-        $("#vh1").val(vdtm1 / 240);
-        $("#vd1").val(vdtm1 / 30);
-        $("#tdd1").val(tdm1 / 30);
+        
+        var tcmdoh2=parseFloat($("#tcmdoh2").val());
+        $("#vh1").val(tcmdoh2);
+        var tcmdod2=parseFloat($("#tcmdod2").val());
+        $("#vd1").val(tcmdod2);
+        
+        var sd11=parseFloat($("#sd11").val());
+        var sh1=parseFloat($("#sh1").val());
+        $("#tdd1").val(sd11+sdtd1+add1+add2+add3+add4+add5+add6+add7);
+        $("#tdh1").val(sh1+sdth1+ahh1+ahh2+ahh3+ahh4+ahh5+ahh6+ahh7);
+        
         var tdd1 = parseFloat($("#tdd1").val());
-        $("#tdh1").val(tdd1 / 8);
         var tdh1 = parseFloat($("#tdh1").val());
+
+        
+       $("#salm1").val(salariom*0.4);
+       $("#penm1").val(salariom*0.4);
+       var  salm1=parseFloat($("#salm1").val());
+       var penm1=parseFloat($("#penm1").val());
+       $("#tdm2").val(salm1+penm1);
+        $("#sald1").val((tdd1-sdtd1)*0.04);
+       var sald1=parseFloat($("#sald1").val());
+       $("#salh1").val(sald1/8);
+       var salh1=parseFloat($("#salh1").val());
+       $("#pend1").val(sald1);
+       var pend1=parseFloat($("#pend1").val());
+       $("#penh1").val(salh1);
+      
+      
+       var penh1=parseFloat($("#penh1").val());
+       $("#tdm2").val(salm1+penm1);
+       $("#tdd2").val(sald1+pend1);
+       $("#tdh2").val(salh1+penh1);
+       
+        
     }
     function operar2() {
         var sm3 = parseFloat($("#sm3").val());
