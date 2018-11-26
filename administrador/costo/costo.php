@@ -1432,41 +1432,41 @@
                                     <th colspan="2">COCINERO</th>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">FILIPINA<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">CHAQUETA<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">FILIPINA<input type="number"   class="form-control" value="0" id="ch1" oninput="dotaciones()"></td>
+                                    <td colspan="2">CHAQUETA<input type="number"   class="form-control" value="0"  id="coc1"  oninput="dotaciones()"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">PANTALON    NEGRO<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">PANTALON<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">PANTALON    NEGRO<input type="number"   class="form-control" value="0"   id="ch2"  oninput="dotaciones()"></td>
+                                    <td colspan="2">PANTALON<input type="number"   class="form-control"  value="0"  id="coc2" oninput="dotaciones()"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">CUELLO OPICO<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">PAÑUELO<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">CUELLO OPICO<input type="number" class="form-control"  value="0"  id="ch3"  oninput="dotaciones()"></td>
+                                    <td colspan="2">PAÑUELO<input type="number"   class="form-control" value="0"  id="coc3" oninput="dotaciones()"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">LIMPION O    CABALLO<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">GORRO ALTO<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">LIMPION O    CABALLO<input type="number"  value="0"  class="form-control"  id="ch4"  oninput="dotaciones()"></td>
+                                    <td colspan="2">GORRO ALTO<input type="number"  class="form-control"  value="0" id="coc4" oninput="dotaciones()"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">MANDIL<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">DELANTAL ALTO<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">MANDIL<input type="number"  class="form-control"  value="0"  id="ch5"  oninput="dotaciones()"></td>
+                                    <td colspan="2">DELANTAL ALTO<input type="number"  class="form-control" value="0"  id="coc5" oninput="dotaciones()"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">GORRO<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">CALZADO<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">GORRO<input type="number"  class="form-control"  id="ch6" value="0"   oninput="dotaciones()"></td>
+                                    <td colspan="2">CALZADO<input type="number"  class="form-control"  id="coc6"  value="0" oninput="dotaciones()"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">CALZADO<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">PLACA<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">CALZADO<input type="number"  class="form-control"  id="ch7"  value="0"  oninput="dotaciones()"></td>
+                                    <td colspan="2">PLACA<input type="number" class="form-control"  id="coc7"  value="0" oninput="dotaciones()"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">PLACA<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">PLACA<input type="number"  class="form-control"  id="ch8"  value="0"  oninput="dotaciones()"></td>
                                     <td colspan="2">&nbsp;</td>
 
                                 </tr>
                                 <tr>
-                                    <th colspan="2">TOTAL<input type="number" name="" id="" class="form-control"></td>
-                                    <th colspan="2">TOTAL<input type="number" name="" id="" class="form-control"></td>
+                                    <th colspan="2">TOTAL<input type="number" class="form-control totales"  id="to1" readonly=""></td>
+                                    <th colspan="2">TOTAL<input type="number"  class="form-control totales" id="to2" readonly=""></td>
                                 </tr>
                                 <tr>
                                     <th colspan="2" >AUXILIAR    DE COCINA</th>
@@ -1474,33 +1474,33 @@
 
                                 </tr>
                                 <tr>
-                                    <td colspan="2">BLUSA<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">CHAQUETA<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">BLUSA<input type="number" id="au1" value="0"   oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">CHAQUETA<input type="number" id="stew1" value="0"   oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">PANTALON<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">PANTALON<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">PANTALON<input type="number" id="au2" value="0"   oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">PANTALON<input type="number" id="stew2" value="0"   oninput="dotaciones()"class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">GORRO<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">GORRO<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">GORRO<input type="number" id="au3" value="0"   oninput="dotaciones()"  class="form-control"></td>
+                                    <td colspan="2">GORRO<input type="number" id="stew3" value="0"   oninput="dotaciones()"class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">DELANTAL<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">DELANTAL IMPERMEABLE<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">DELANTAL<input type="number" id="au4" value="0"   oninput="dotaciones()"  class="form-control"></td>
+                                    <td colspan="2">DELANTAL IMPERMEABLE<input type="number" id="stew4" value="0"   oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">CALZADO<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">CALZADO<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">CALZADO<input type="number" id="au5" value="0"   oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">CALZADO<input type="number" id="stew5" value="0"   oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td  colspan="2">PLACA<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">PLACA<input type="number" name="" id="" class="form-control"></td>
+                                    <td  colspan="2">PLACA<input type="number" id="au6" value="0"   oninput="dotaciones()"  class="form-control"></td>
+                                    <td colspan="2">PLACA<input type="number"id="stew6" value="0"   oninput="dotaciones()" class="form-control"></td>
                                 </tr>
 
                                 <tr>
-                                    <th colspan="2">TOTAL<input type="number" name="" id="" class="form-control"></td>
-                                    <th colspan="2">TOTAL<input type="number" name="" id="" class="form-control"></td>
+                                    <th colspan="2">TOTAL<input type="number" id="to3" class="form-control totales" readonly=""></td>
+                                    <th colspan="2">TOTAL<input type="number" id="to4" class="form-control totales" readonly=""></td>
                                 </tr>
 
                                 <tr>
@@ -1508,75 +1508,75 @@
                                     <td colspan="2" rowspan="7"> <img src="../img/logo_sena.png" alt="logo sena" width="100%"/></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">CHAQUETA<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">CHAQUETA<input type="number" id="suh1" value="0"   oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">PANTALON    CLASICO<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">PANTALON    CLASICO<input type="number"  id="suh2" value="0"   oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">CINTILLO<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">CINTILLO<input type="number" id="suh3" value="0"   oninput="dotaciones()"class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">CALZADO<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">CALZADO<input type="number" id="suh4" value="0"   oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">PLACA<input type="number" name="" id="" class="form-control"></td>
-                                </tr>
-
-                                <tr>
-                                    <th colspan="2">TOTAL<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">PLACA<input type="number" id="suh5" value="0"   oninput="dotaciones()"class="form-control"></td>
                                 </tr>
 
+                                <tr>
+                                    <th colspan="2">TOTAL<input type="number" id="to5"  class="form-control totales" readonly=""></td>
+                                </tr>
+
 
                                 <tr>
-                                    <th colspan="2" >CAPITAN    MESEROS</th>
+                                    <th colspan="2" >CAPITAN MESEROS</th>
                                     <th colspan="2">ANFITRION</th>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">CHAQUETA    SMOKING<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">CHAQUETA TIPO    FRANCESA<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">CHAQUETA    SMOKING<input type="number" value="0" id="capi1" oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">CHAQUETA TIPO    FRANCESA<input type="number" value="0" id="anf1" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">PANTALON    SMOKING<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">CAMISA CUELLO    PAJARITA<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">PANTALON    SMOKING<input type="number" value="0" id="capi2" oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">CAMISA CUELLO    PAJARITA<input type="number" value="0" id="anf2" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">CAMISA CUELLO    PAJARITA<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">PANTALON CLASICO<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">CAMISA CUELLO    PAJARITA<input type="number" value="0" id="capi3" oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">PANTALON CLASICO<input type="number" value="0" id="anf3" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">FAJIN<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">CORBATIN<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">FAJIN<input type="number" value="0" id="capi4" oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">CORBATIN<input type="number" value="0" id="anf4" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">CORBATIN<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">CALZADO<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">CORBATIN<input type="number" value="0" id="capi5" oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">CALZADO<input type="number" value="0" id="anf5" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">CALZADO<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">CHAQUETA MUJER<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">CALZADO<input type="number" value="0" id="capi6" oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">CHAQUETA MUJER<input type="number" value="0" id="anf6" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">CHAQUETA TIPO    MILITAR<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">BLUSA<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">CHAQUETA TIPO    MILITAR<input type="number" value="0" id="capi7" oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">BLUSA<input type="number" value="0" id="anf7" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">PANTALON    CLASICO<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">CORBATA<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">PANTALON    CLASICO<input type="number" value="0" id="capi8" oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">CORBATA<input type="number" value="0" id="anf8" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">PLACA<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">FALDA CLSICA<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">PLACA<input type="number" value="0" id="capi9" oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">FALDA CLSICA<input type="number" value="0" id="anf9" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">&nbsp;</td>
 
-                                    <td colspan="2">PLACA<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">PLACA<input type="number" value="0" id="anf10" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
 
                                 <tr>
-                                    <th colspan="2">TOTAL<input type="number" name="" id="" class="form-control"></td>
-                                    <th colspan="2">TOTAL<input type="number" name="" id="" class="form-control"></td>
+                                    <th colspan="2">TOTAL<input type="number" id="to6" class="form-control totales" readonly=""></td>
+                                    <th colspan="2">TOTAL<input type="number" id="to7" class="form-control totales" readonly=""></td>
                                 </tr>
 
                                 <tr>
@@ -1584,57 +1584,57 @@
                                     <th colspan="2" >SOMMELIER</th>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">CAMISA<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">CAMISA<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">CAMISA<input type="number" value="0" id="mess1" oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">CAMISA<input type="number"  value="0" id="somm1" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">DELANTAL DE    SERVICIO<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">DELANTAL<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">DELANTAL DE    SERVICIO<input type="number"  value="0" id="mess2" oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">DELANTAL<input type="number" value="0" id="somm2" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">PANTALON    CLASICO<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">PANTALON CLASICO<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">PANTALON    CLASICO<input type="number"  value="0" id="mess3" oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">PANTALON CLASICO<input type="number" value="0" id="somm3" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">CALZADO<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">CORBATIN<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">CALZADO<input type="number"  value="0" id="mess4" oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">CORBATIN<input type="number" value="0" id="somm4" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">CAMISA CUELLO    PAJARITA<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">CALZADO<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">CAMISA CUELLO    PAJARITA<input type="number"  value="0" id="mess5" oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">CALZADO<input type="number" value="0" id="somm5" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">PANTALON    CLASICO<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">PLACA<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">PANTALON    CLASICO<input type="number"  value="0" id="mess6" oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">PLACA<input type="number" value="0" id="somm6" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">CHALECO CON    SOLAPA<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">CHALECO CON    SOLAPA<input type="number"  value="0" id="mess7" oninput="dotaciones()" class="form-control"></td>
                                     <td colspan="2"></td>
 
                                 </tr>
                                 <tr>
-                                    <td colspan="2">CORBATIN<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">CORBATIN<input type="number" value="0" id="mess8" oninput="dotaciones()" class="form-control"></td>
                                     <td colspan="2">&nbsp;</td>
 
                                 </tr>
                                 <tr>
-                                    <td colspan="2">KIMONO<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">KIMONO<input type="number" value="0" id="mess9" oninput="dotaciones()" class="form-control"></td>
                                     <td colspan="2">&nbsp;</td>
 
                                 </tr>
                                 <tr>
-                                    <td  colspan="2">PANTALON CON FRANJA DE COLOR<input type="number" name="" id="" class="form-control"></td>
+                                    <td  colspan="2">PANTALON CON FRANJA DE COLOR<input type="number" value="0" id="mess10" oninput="dotaciones()" class="form-control"></td>
                                     <td colspan="2">&nbsp;</td>
 
                                 </tr>
                                 <tr>
-                                    <td colspan="2">PLACA<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">PLACA<input type="number" value="0" id="mess11" oninput="dotaciones()" class="form-control"></td>
                                     <td colspan="2">&nbsp;</td>
 
                                 </tr>
                                 <tr>
-                                    <th colspan="2">TOTAL<input type="number" name="" id="" class="form-control"></td>
-                                    <th colspan="2">TOTAL<input type="number" name="" id="" class="form-control"></td>
+                                    <th colspan="2">TOTAL<input type="number" name="" id="to8" class="form-control totales" readonly=""></td>
+                                    <th colspan="2">TOTAL<input type="number" name="" id="to9" class="form-control totales" readonly=""></td>
                                 </tr>
 
                                 <tr>
@@ -1642,40 +1642,44 @@
                                     <th colspan="2">AYUDANTE DE    MESERO</th>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">CAMISA BLANCA<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">CAMISA<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">CAMISA BLANCA<input type="number" value="0" id="bar1" oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">CAMISA<input type="number"  value="0" id="admee1" oninput="dotaciones()"  class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">PANTALON    NEGRO<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">DELANTAL DE SERVICIO<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">PANTALON    NEGRO<input type="number"  value="0" id="bar2" oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">DELANTAL DE SERVICIO<input type="number" value="0" id="admee2" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">CHALECO<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">PANTALON CLASICO<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">CHALECO<input type="number"  value="0" id="bar3" oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">PANTALON CLASICO<input type="number" value="0" id="admee3" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">CORBATA<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">CALZADO<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">CORBATA<input type="number"  value="0" id="bar4" oninput="dotaciones()"  class="form-control"></td>
+                                    <td colspan="2">CALZADO<input type="number"value="0" id="admee4" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">CORBATIN<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">CORBATIN<input type="number"  value="0" id="bar5" oninput="dotaciones()"  class="form-control"></td>
                                     <td colspan="2"></td>
 
                                 </tr>
                                 <tr>
-                                    <td colspan="2">ZAPATOS<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">ZAPATOS<input type="number" value="0" id="bar6" oninput="dotaciones()"  class="form-control"></td>
                                     <td colspan="2"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">PLACA<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">PLACA<input type="number"  value="0" id="bar7" oninput="dotaciones()"  class="form-control"></td>
                                     <td colspan="2"></td>
 
                                 </tr>
 
 
                                 <tr>
-                                    <th colspan="2">TOTAL<input type="number" name="" id="" class="form-control"></td>
-                                    <th colspan="2">TOTAL<input type="number" name="" id="" class="form-control"></td>
+                                    <th colspan="2">TOTAL<input type="number" name="" id="to10" class="form-control totales" readonly=""></td>
+                                    <th colspan="2">TOTAL<input type="number" name="" id="to11" class="form-control totales" readonly=""></td>
+                                </tr>
+                                <tr>
+                                    <th colspan="4"> TOTAL DONACIONES<input type="number" name="" id="to01" class="form-control totales" readonly=""></td>
+                                    
                                 </tr>
                             </table>
                             <table class="table table-responsive table-striped table-bordered" >
@@ -1688,24 +1692,24 @@
                                     <th colspan="2">VALET PARKING</th>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">CHAQUETA<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">CHAQUETA<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">CHAQUETA<input type="number" value="0" id="port1" oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">CHAQUETA<input type="number" value="0" id="vp1" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">PANTALON <input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">PANTALON <input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">PANTALON <input type="number" value="0" id="port2" oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">PANTALON <input type="number" value="0" id="vp2" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">ZAPATOS<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">ZAPATOS<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">ZAPATOS<input type="number" value="0" id="port3" oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">ZAPATOS<input type="number" value="0" id="vp3" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">PLACA<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">PLACA<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">PLACA<input type="number" value="0" id="port4" oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">PLACA<input type="number" value="0" id="vp4" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <th  colspan="2">TOTAL<input type="number" name="" id="" class="form-control"></th>
-                                    <th colspan="2">TOTAL<input type="number" name="" id="" class="form-control"></th>
+                                    <th  colspan="2">TOTAL<input type="number" value="0" id="to12"  class="form-control totales" readonly=""></th>
+                                    <th colspan="2">TOTAL<input type="number" value="0" id="to13"  class="form-control totales" readonly=""></th>
                                 </tr>
 
 
@@ -1713,38 +1717,38 @@
                                     <th colspan="2">GUARDA SEGURIDAD</th>
                                     <th colspan="2">COORDINADORES</th>
                                 </tr>
-                                <tr>
-                                    <td colspan="2">CHAQUETA<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">CHAQUETA<input type="number" name="" id="" class="form-control"></td>
+                                <tr> 
+                                    <td colspan="2">CHAQUETA<input type="number" value="0" id="gs01" oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">CHAQUETA<input type="number" value="0" id="coor01" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">PANTALON<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">PANTALON<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">PANTALON<input type="number" value="0" id="gs02" oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">PANTALON<input type="number" value="0" id="coor02" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">ZAPATOS<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">CAMISA<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">ZAPATOS<input type="number" value="0" id="gs03" oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">CAMISA<input type="number" value="0" id="coor03" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">PLACA<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">CORBATA<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">PLACA<input type="number" value="0" id="gs04" oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">CORBATA<input type="number" value="0" id="coor04" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">CAMISA<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">PAÑOLETA<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">CAMISA<input type="number" value="0" id="gs05" oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">PAÑOLETA<input type="number" value="0" id="coor05" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">CORBATA<input type="number" name="" id="" class="form-control"></td>
-                                    <td colspan="2">PLACA<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">CORBATA<input type="number" value="0" id="gs06" oninput="dotaciones()" class="form-control"></td>
+                                    <td colspan="2">PLACA<input type="number" value="0" id="coor06" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
                                     <td colspan="2"></td>
 
-                                    <td colspan="2">ZAPATOS<input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2">ZAPATOS<input type="number" value="0" id="coor07" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
-                                    <th colspan="2">TOTAL<input type="number" name="" id="" class="form-control"></th>
-                                    <th colspan="2">TOTAL<input type="number" name="" id="" class="form-control"></th>
+                                    <th colspan="2">TOTAL<input type="number" name="" id="to14" class="form-control totales" readonly=""></th>
+                                    <th colspan="2">TOTAL<input type="number" name="" id="to15" class="form-control totales" readonly=""></th>
                                 </tr>
 
 
@@ -1754,31 +1758,34 @@
                                 </tr>
                                 <tr>
                                     <td colspan="2">OVEROL ENTERIZO</td>
-                                    <td colspan="2"><input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2"><input type="number" value="0" id="mant1" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">PANTALON JEAN</td>
-                                    <td colspan="2"><input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2"><input type="number" value="0" id="mant2" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">CAMISA DE JEAN</td>
-                                    <td colspan="2"><input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2"><input type="number" value="0" id="mant3" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">BOTAS PUNTA DE ACERO</td>
-                                    <td colspan="2"><input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2"><input type="number" value="0" id="mant4" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">PLACA</td>
-                                    <td colspan="2"><input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2"><input type="number" value="0" id="mant5" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">BOTAS CAUCHO SEGURIDAD</td>
-                                    <td colspan="2"><input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2"><input type="number" value="0" id="mant6" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
                                     <th colspan="2">TOTAL</th>
-                                    <td colspan="2" ><input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="2" ><input type="number"  id="to16" class="form-control totales" readonly=""></td>
+                                </tr>
+                                <tr>
+                                    <th colspan="4">TOTAL DONACIONES<input type="number"  id="to02" class="form-control totales" readonly=""></th>
                                 </tr>
                                 <tr>
                                     <td colspan="4" >Los elementos de protección personal –EPP– tienen como objetivo    brindar protección al trabajador con respecto a los riesgos a que está    expuesto durante la realización de sus labores, a fin de aumentar la    seguridad y prevenir que al momento de un accidente las lesiones no sean tan    graves.</td>
@@ -1789,69 +1796,94 @@
                                 </tr>
                                 <tr>
                                     <td>PROTECCION EN    CABEZA Y ROSTRO</td>
-                                    <td colspan="3"><input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="3"><input type="number" value="0" id="edpp1" oninput="dotaciones()"  class="form-control"></td>
                                 </tr>
                                 <tr>
                                     <td>GORRO O COFIA</td>
-                                    <td colspan="3"><input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="3"><input type="number" value="0" id="edpp2" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
                                     <td>PROTECCION    AUDITIVA ANATOMICA</td>
-                                    <td colspan="3"><input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="3"><input type="number" value="0" id="edpp3" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
                                     <td>MONOGAFAS DE    SEGURIDAD</td>
-                                    <td colspan="3"><input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="3"><input type="number" value="0" id="edpp4" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
                                     <td>PRORTECION    RESPIRATORIA</td>
-                                    <td colspan="3"><input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="3"><input type="number" value="0" id="edpp5" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
                                     <td>TAPABOCAS</td>
-                                    <td colspan="3"><input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="3"><input type="number" value="0" id="edpp6" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
                                     <td>PROTECCION    MANOS Y BRAZOS</td>
-                                    <td colspan="3"><input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="3"><input type="number" value="0" id="edpp7" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
                                     <td>GUANTES    DESECHABLES</td>
-                                    <td colspan="3"><input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="3"><input type="number" value="0" id="edpp8" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
                                     <td>GUANTES CORTE EN MALLA DE ACERO INOXIDABLE</td>
-                                    <td colspan="3"><input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="3"><input type="number" value="0" id="edpp9" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
                                     <td>PROTECCION    PIES</td>
-                                    <td colspan="3"><input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="3"><input type="number" value="0" id="edpp10" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
                                     <td >ZAPATO CUERO CERRADO, SUELA DE CAUCHO ADHERENTE</td>
-                                    <td colspan="3"><input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="3"><input type="number" value="0" id="edpp11" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
                                     <td>BOTAS    PLASTICAS</td>
-                                    <td colspan="3"><input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="3"><input type="number" value="0" id="edpp12" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
                                     <td>PROTECCION    CORPORAL</td>
-                                    <td colspan="3"><input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="3"><input type="number" value="0" id="edpp13" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
                                     <td>DELANTAL    IMPERMEABLE</td>
-                                    <td colspan="3"><input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="3"><input type="number" value="0" id="edpp14" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
                                     <td>CHAQUETA(CUARTOS    FRIOS)</td>
-                                    <td colspan="3"><input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="3"><input type="number" value="0" id="edpp15" oninput="dotaciones()" class="form-control"></td>
                                 </tr>
                                 <tr>
                                     <td>TOTAL EPP</td>
-                                    <td colspan="3"><input type="number" name="" id="" class="form-control"></td>
+                                    <td colspan="3"><input type="number"  id="to17" class="form-control totales" readonly=""></td>
                                 </tr>
                             </table>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <table class="table table-responsive table-striped table-bordered" >
+                                
+                                    <tr>
+                                        <th>TOTAL DOTACION Y EPP</th>
+                                        <td><input type="number"  id="to03" class="form-control totales" readonly=""></td>
+                                    </tr>
+                                    <tr>
+                                        <th>TOTAL DOTACION MENSUAL</th>
+                                        <td><input type="number"  id="to04" class="form-control totales" readonly=""></td>
+                                    </tr>
+                                    <tr>
+                                        <th>TOTAL DOTACION DIARIO</th>
+                                        <td><input type="number"  id="to05" class="form-control totales" readonly=""></td>
+                                    </tr>
+                                    <tr>
+                                        <th>TOTAL DOTACION HORA</th>
+                                        <td><input type="number"  id="to06" class="form-control totales" readonly=""></td>
+                                    </tr>
+                                
+                            </table>
+        
+                            
                             <button type="button" class="btn btn-success">Guardar</button>
                             <button type="button" class="btn btn-info">Imprimir</button>
                             <button type="reset" class="btn btn-warning">Cancelar</button>
@@ -2194,7 +2226,8 @@
         var vacaciones31=parseFloat();
         var h1jdt31=parseFloat($("#h1jdt31").val());
         //pendiente por trabajar la variable de dotación(TOTAL DOTACION HORA) para multiplicar por h1jdt31
-        $("#dotaciones31").val(0*h1jdt31);
+        var to06=parseFloat($("#to06").val());
+        $("#dotaciones31").val(to06*h1jdt31);
         var dotaciones31=parseFloat();
         $("#tp31").val(cesantia31+pds31+idc31+vacaciones31+dotaciones31);
         
@@ -2209,7 +2242,155 @@
     }
     function vaciarddd(i) {
         $("#ddd" + i).val("");
+    
     }
+    
+    function dotaciones(){
+        var i=1;
+        var ch=0;
+        while(i<=8){
+            ch=ch+parseFloat($("#ch"+i).val());
+            i++;
+        }
+        $("#to1").val(ch);
+        var to1=parseFloat($("#to1").val());
+        
+        i=1;
+        var coc=0;
+        var bar=0;
+        
+         var coor0=0;
+        while(i<=7){
+            coc=coc+parseFloat($("#coc"+i).val());
+            bar=bar+parseFloat($("#bar"+i).val());
+            coor0=coor0+parseFloat($("#coor0"+i).val());
+           
+            i++;
+        }
+        $("#to2").val(coc);
+        var to2=parseFloat($("#to2").val());
+        $("#to10").val(bar);
+        var to10=parseFloat($("#to10").val());
+        $("#to15").val(coor0);
+        var to15=parseFloat($("#to15").val());
+        
+        
+        
+        
+        i=1;
+        var au=0;
+        var stew=0;
+         
+        while(i<=6){
+           
+            au=au+parseFloat($("#au"+i).val());
+            stew=stew+parseFloat($("#stew"+i).val());
+            i++;
+        }
+        $("#to3").val(au);
+        var to3=parseFloat($("#to3").val());
+        $("#to4").val(stew);
+        var to4=parseFloat($("#to4").val());
+        
+        i=1;
+        var suh=0;
+        while(i<=5){
+            suh=suh+parseFloat($("#suh"+i).val());
+            i++;
+        }
+        $("#to5").val(suh);
+        var to5=parseFloat($("#to5").val());
+        
+        i=1;
+        var capi=0;
+        while(i<=9){
+            capi=capi+parseFloat($("#capi"+i).val());
+            i++;
+        }
+        $("#to6").val(capi);
+        var to6=parseFloat($("#to6").val());
+        
+        i=1;
+        var anf=0;
+        while(i<=10){
+            anf=anf+parseFloat($("#anf"+i).val());
+            i++;
+        }
+        $("#to7").val(anf);
+        var to7=parseFloat($("#to7").val());
+       /**/ 
+        i=1;
+        var mess=0;
+        while(i<=11){
+            mess=mess+parseFloat($("#mess"+i).val());
+            i++;
+        }
+        $("#to8").val(mess);
+        var to8=parseFloat($("#to8").val());
+        
+          
+        i=1;
+        var somm=0;
+        var gs0=0;
+        var mant=0;
+        while(i<=6){
+            somm=somm+parseFloat($("#somm"+i).val());
+            gs0=gs0+parseFloat($("#gs0"+i).val());
+            mant=mant+parseFloat($("#mant"+i).val());
+            i++;
+        }
+        $("#to9").val(somm);
+        var to9=parseFloat($("#to9").val());
+        $("#to14").val(gs0);
+        var to14=parseFloat($("#to14").val());
+        $("#to16").val(mant);
+        var to16=parseFloat($("#to16").val());
+        
+        i=1;
+        var admee=0;
+        var port=0;
+        var vp=0;
+        while(i<=4){
+            admee=admee+parseFloat($("#admee"+i).val());
+            port=port+parseFloat($("#port"+i).val());
+            vp=vp+parseFloat($("#vp"+i).val());
+            i++;
+        }
+        $("#to11").val(admee);
+        var to11=parseFloat($("#to11").val());
+        $("#to12").val(port);
+        var to12=parseFloat($("#to12").val());
+        $("#to13").val(vp);
+        var to13=parseFloat($("#to13").val());
+        
+        
+        i=1;
+        var edpp=0;
+        while(i<=15){
+           edpp=edpp+parseFloat($("#edpp"+i).val());
+            i++; 
+        }
+         $("#to17").val(edpp);
+        var to17=parseFloat($("#to17").val());
+        
+        
+         $("#to01").val(to11+to10+to9+to8+to7+to6+to5+to4+to3+to2+to1);
+         $("#to02").val(to12+to13+to14+to15+to16);
+         var to02=parseFloat($("#to02").val());
+         var to01=parseFloat($("#to01").val());
+        
+        $("#to03").val(to17+to02+to01);
+        var to03=parseFloat($("#to03").val());
+         $("#to04").val(to03/4);
+         var to04=parseFloat($("#to04").val());
+         $("#to05").val(to04/30);
+         var to05=parseFloat($("#to05").val());
+         $("#to06").val(to05/8);
+         var to06=parseFloat($("#to06").val());
+        
+        
+    }
+    
 
 
 </script>
