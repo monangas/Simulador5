@@ -38,7 +38,7 @@
 
 
 
-<section id="s11">
+<section id="seccion1">
     <div class="container">
         <div class="panel panel-default">
             <div class="panel-heading" >Cartilla</div>
@@ -343,7 +343,7 @@
     </div>
 </div>
 </section>
-<section id="s22">
+<section id="seccion2">
     <div class="container">
         <div class="panel panel-default">
             <div class="panel-heading">Contrato de aprendizaje</div>
@@ -456,7 +456,7 @@
                                 </table>
 
                                 <button type="button" class="btn btn-success">Guardar</button>
-                                <button type="button" class="btn btn-info">Imprimir</button>
+                                <button type="button" class="btn btn-info" onclick="imprSelec(2)">Imprimir</button>
                                 <button type="reset" class="btn btn-warning">Cancelar</button>
 
 
@@ -470,7 +470,7 @@
     </div>
 </section>
 
-<section id="s33">
+<section id="seccion3">
     <div class="container">
         <div class="panel panel-default">
             <div class="panel-heading">Hoja de liquidación Contrato</div>
@@ -932,7 +932,7 @@
                                 </tr>
                             </table>
                             <button type="button" class="btn btn-success">Guardar</button>
-                            <button type="button" class="btn btn-info">Imprimir</button>
+                            <button type="button" class="btn btn-info"  onclick="imprSelec(3)">Imprimir</button>
                             <button type="reset" class="btn btn-warning">Cancelar</button>
                         </div>
                     </form>
@@ -942,7 +942,7 @@
         </div>
     </div>
 </section>
-<section id="s44">
+<section id="seccion4">
     <div class="container">
         <div class="panel panel-default">
             <div class="panel-heading">Hoja de liquidación Agencia</div>
@@ -1299,7 +1299,7 @@
                             </table>
 
                             <button type="button" class="btn btn-success">Guardar</button>
-                            <button type="button" class="btn btn-info">Imprimir</button>
+                            <button type="button" class="btn btn-info" onclick="imprSelec(4)">Imprimir</button>
                             <button type="reset" class="btn btn-warning">Cancelar</button>
                         </div>
 
@@ -1310,7 +1310,7 @@
         </div>
     </div>
 </section>
-<section id="s55">
+<section id="seccion5">
     <div class="container">
         <div class="panel panel-default">
             <div class="panel-heading">Hoja de liquidación Contrato Civil</div>
@@ -1398,7 +1398,7 @@
                             </table>
 
                             <button type="button" class="btn btn-success">Guardar</button>
-                            <button type="button" class="btn btn-info">Imprimir</button>
+                            <button type="button" class="btn btn-info" onclick="imprSelec(5)">Imprimir</button>
                             <button type="reset" class="btn btn-warning">Cancelar</button>   
                         </div>
                         <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#collapse5"><span class="glyphicon glyphicon-eye-close"></span></button>
@@ -1408,7 +1408,7 @@
         </div>
     </div>
 </section>
-<section id="s66">
+<section id="seccion6">
     <div class="container">
         <div class="panel panel-default">
             <div class="panel-heading">Dotaciones</div>
@@ -1679,7 +1679,7 @@
                                 </tr>
                                 <tr>
                                     <th colspan="4"> TOTAL DONACIONES<input type="number" name="" id="to01" class="form-control totales" readonly=""></td>
-                                    
+
                                 </tr>
                             </table>
                             <table class="table table-responsive table-striped table-bordered" >
@@ -1863,29 +1863,29 @@
                             <br/>
                             <br/>
                             <table class="table table-responsive table-striped table-bordered" >
-                                
-                                    <tr>
-                                        <th>TOTAL DOTACION Y EPP</th>
-                                        <td><input type="number"  id="to03" class="form-control totales" readonly=""></td>
-                                    </tr>
-                                    <tr>
-                                        <th>TOTAL DOTACION MENSUAL</th>
-                                        <td><input type="number"  id="to04" class="form-control totales" readonly=""></td>
-                                    </tr>
-                                    <tr>
-                                        <th>TOTAL DOTACION DIARIO</th>
-                                        <td><input type="number"  id="to05" class="form-control totales" readonly=""></td>
-                                    </tr>
-                                    <tr>
-                                        <th>TOTAL DOTACION HORA</th>
-                                        <td><input type="number"  id="to06" class="form-control totales" readonly=""></td>
-                                    </tr>
-                                
+
+                                <tr>
+                                    <th>TOTAL DOTACION Y EPP</th>
+                                    <td><input type="number"  id="to03" class="form-control totales" readonly=""></td>
+                                </tr>
+                                <tr>
+                                    <th>TOTAL DOTACION MENSUAL</th>
+                                    <td><input type="number"  id="to04" class="form-control totales" readonly=""></td>
+                                </tr>
+                                <tr>
+                                    <th>TOTAL DOTACION DIARIO</th>
+                                    <td><input type="number"  id="to05" class="form-control totales" readonly=""></td>
+                                </tr>
+                                <tr>
+                                    <th>TOTAL DOTACION HORA</th>
+                                    <td><input type="number"  id="to06" class="form-control totales" readonly=""></td>
+                                </tr>
+
                             </table>
-        
-                            
+
+
                             <button type="button" class="btn btn-success">Guardar</button>
-                            <button type="button" class="btn btn-info">Imprimir</button>
+                            <button type="button" class="btn btn-info"  onclick="imprSelec(6)">Imprimir</button>
                             <button type="reset" class="btn btn-warning">Cancelar</button>
                         </form>
                     </div>
@@ -1895,6 +1895,8 @@
         </div>
     </div>
 </section>
+
+
 <script>
     $(document).ready(function () {
         $('[data-toggle="popover"]').popover();
@@ -1983,9 +1985,9 @@
 
             var ho31 = parseFloat($("#ho31").val());
             $("#ssss0").val(ndhde3 * ho23);
-            
 
-        operar5();
+
+            operar5();
         });
 
 
@@ -2020,57 +2022,57 @@
         var henfm1 = parseFloat($("#henfm1").val());
 
 
-        var ho1=parseFloat( $("#ho1").val());
-        var hh1=parseFloat( $("#hh1").val());
-        var dd1=parseFloat( $("#dd1").val());
- 
-        $("#add1").val(ho1*hh1*dd1*0.35);
+        var ho1 = parseFloat($("#ho1").val());
+        var hh1 = parseFloat($("#hh1").val());
+        var dd1 = parseFloat($("#dd1").val());
+
+        $("#add1").val(ho1 * hh1 * dd1 * 0.35);
         var add1 = parseFloat($("#add1").val());
-        $("#ahh1").val(add1/8);
-        var ahh1=parseFloat($("#ahh1").val());
-        
-        var hh2=parseFloat( $("#hh2").val());
-        var dd2=parseFloat( $("#dd2").val());
-        $("#add2").val(ho1*hh2*dd2*0.75);
+        $("#ahh1").val(add1 / 8);
+        var ahh1 = parseFloat($("#ahh1").val());
+
+        var hh2 = parseFloat($("#hh2").val());
+        var dd2 = parseFloat($("#dd2").val());
+        $("#add2").val(ho1 * hh2 * dd2 * 0.75);
         var add2 = parseFloat($("#add2").val());
-       $("#ahh2").val(add2/8);
-        var ahh2=parseFloat($("#ahh2").val()); 
-       
-        var hh3=parseFloat( $("#hh3").val());
-        var dd3=parseFloat( $("#dd3").val());
-        $("#add3").val(ho1*hh3*dd3*1.1);
+        $("#ahh2").val(add2 / 8);
+        var ahh2 = parseFloat($("#ahh2").val());
+
+        var hh3 = parseFloat($("#hh3").val());
+        var dd3 = parseFloat($("#dd3").val());
+        $("#add3").val(ho1 * hh3 * dd3 * 1.1);
         var add3 = parseFloat($("#add3").val());
-        $("#ahh3").val(add3/8);
-        var ahh3=parseFloat($("#ahh3").val());
-        
-      
-        var hh4=parseFloat( $("#hh4").val());
-        var dd4=parseFloat( $("#dd4").val());
-        $("#add4").val(ho1*hh4*dd4*1.25);
+        $("#ahh3").val(add3 / 8);
+        var ahh3 = parseFloat($("#ahh3").val());
+
+
+        var hh4 = parseFloat($("#hh4").val());
+        var dd4 = parseFloat($("#dd4").val());
+        $("#add4").val(ho1 * hh4 * dd4 * 1.25);
         var add4 = parseFloat($("#add4").val());
-        $("#ahh4").val(add4/8);
-        var ahh4=parseFloat($("#ahh4").val());
-    
-        var hh5=parseFloat( $("#hh5").val());
-        var dd5=parseFloat( $("#dd5").val());
-        $("#add5").val(ho1*hh5*dd5*1.75);
+        $("#ahh4").val(add4 / 8);
+        var ahh4 = parseFloat($("#ahh4").val());
+
+        var hh5 = parseFloat($("#hh5").val());
+        var dd5 = parseFloat($("#dd5").val());
+        $("#add5").val(ho1 * hh5 * dd5 * 1.75);
         var add5 = parseFloat($("#add5").val());
-        $("#ahh5").val(add5/8);
-        var ahh5=parseFloat($("#ahh5").val());
-      
-        var hh6=parseFloat( $("#hh6").val());
-        var dd6=parseFloat( $("#dd6").val());
-        $("#add6").val(ho1*hh6*dd6*2);
+        $("#ahh5").val(add5 / 8);
+        var ahh5 = parseFloat($("#ahh5").val());
+
+        var hh6 = parseFloat($("#hh6").val());
+        var dd6 = parseFloat($("#dd6").val());
+        $("#add6").val(ho1 * hh6 * dd6 * 2);
         var add6 = parseFloat($("#add6").val());
-        $("#ahh6").val(add6/8);
-        var ahh6=parseFloat($("#ahh6").val());
-        
-        var hh7=parseFloat( $("#hh7").val());
-        var dd7=parseFloat( $("#dd7").val());
-        $("#add7").val(ho1*hh7*dd7*2.5);
+        $("#ahh6").val(add6 / 8);
+        var ahh6 = parseFloat($("#ahh6").val());
+
+        var hh7 = parseFloat($("#hh7").val());
+        var dd7 = parseFloat($("#dd7").val());
+        $("#add7").val(ho1 * hh7 * dd7 * 2.5);
         var add7 = parseFloat($("#add7").val());
-        $("#ahh7").val(add7/8);
-        var ahh7=parseFloat($("#ahh7").val());
+        $("#ahh7").val(add7 / 8);
+        var ahh7 = parseFloat($("#ahh7").val());
 
         $("#tdm1").val(salariom + sdt + rnm1 + rfm1 + rnfm1 + hedm1 + henm1 + hedfm1 + henfm1);
         var tdm1 = parseFloat($("#tdm1").val());
@@ -2078,159 +2080,159 @@
 
         $("#vdtm1").val(tdm1);
         var vdtm1 = parseFloat($("#vdtm1").val());
-        
-        var tcmdoh2=parseFloat($("#tcmdoh2").val());
+
+        var tcmdoh2 = parseFloat($("#tcmdoh2").val());
         $("#vh1").val(tcmdoh2);
-        var tcmdod2=parseFloat($("#tcmdod2").val());
+        var tcmdod2 = parseFloat($("#tcmdod2").val());
         $("#vd1").val(tcmdod2);
-        
-        var sd11=parseFloat($("#sd11").val());
-        var sh1=parseFloat($("#sh1").val());
-        $("#tdd1").val(sd11+sdtd1+add1+add2+add3+add4+add5+add6+add7);
-        $("#tdh1").val(sh1+sdth1+ahh1+ahh2+ahh3+ahh4+ahh5+ahh6+ahh7);
-        
+
+        var sd11 = parseFloat($("#sd11").val());
+        var sh1 = parseFloat($("#sh1").val());
+        $("#tdd1").val(sd11 + sdtd1 + add1 + add2 + add3 + add4 + add5 + add6 + add7);
+        $("#tdh1").val(sh1 + sdth1 + ahh1 + ahh2 + ahh3 + ahh4 + ahh5 + ahh6 + ahh7);
+
         var tdd1 = parseFloat($("#tdd1").val());
         var tdh1 = parseFloat($("#tdh1").val());
 
-        
-       $("#salm1").val(salariom*0.4);
-       $("#penm1").val(salariom*0.4);
-       var  salm1=parseFloat($("#salm1").val());
-       var penm1=parseFloat($("#penm1").val());
-       $("#tdm2").val(salm1+penm1);
-        $("#sald1").val((tdd1-sdtd1)*0.04);
-       var sald1=parseFloat($("#sald1").val());
-       $("#salh1").val(sald1/8);
-       var salh1=parseFloat($("#salh1").val());
-       $("#pend1").val(sald1);
-       var pend1=parseFloat($("#pend1").val());
-       $("#penh1").val(salh1);
-      
-      
-       var penh1=parseFloat($("#penh1").val());
-       $("#tdm2").val(salm1+penm1);
-       $("#tdd2").val(sald1+pend1);
-       $("#tdh2").val(salh1+penh1);
-       
-       var sm1=parseFloat($("#sm1").val());
-       $("#salm2").val(sm1*0.085);
-       var salm2=parseFloat($("#salm2").val());
-       $("#penm2").val(sm1*0.12);
-       var penm2=parseFloat($("#penm2").val());
-       $("#arlm2").val(sm1*0.00522);
-       var arlm2=parseFloat($("#arlm2").val());
-       $("#senm2").val(sm1*0.02);
-       var senm2=parseFloat($("#senm2").val());
-       $("#icbfm2").val(sm1*0.03);
-       var icbfm2=parseFloat($("#icbfm2").val());
-       $("#cdcm2").val(sm1*0.04);
-       var cdcm2=parseFloat($("#cdcm2").val());
-       $("#taem2").val(salm2+penm2+arlm2+senm2+icbfm2+cdcm2);
-       
-       /******/
-       
-      var tdd1=parseFloat($("#tdd1").val());
-         
-       $("#sald2").val((tdd1-sdtd1)*0.085);
-       var sald2=parseFloat($("#sald2").val());
-       $("#pend2").val((tdd1-sdtd1)*0.12);
-       var pend2=parseFloat($("#pend2").val());
-       $("#arld2").val((tdd1-sdtd1)*0.00522);
-       var arld2=parseFloat($("#arld2").val());
-       $("#send2").val((tdd1-sdtd1)*0.02);
-       var send2=parseFloat($("#send2").val());
-       $("#icbfd2").val((tdd1-sdtd1)*0.03);
-       var icbfd2=parseFloat($("#icbfd2").val());
-       $("#cdcd2").val((tdd1-sdtd1)*0.04);
-       var cdcd2=parseFloat($("#cdcd2").val());
-       $("#taed2").val(sald2+pend2+arld2+send2+icbfd2+cdcd2);
-       var taed2=parseFloat($("#taed2").val());
-       
-       $("#salh2").val(sald2/8);
-       var salh2=parseFloat($("#salh2").val());
-       $("#penh2").val(pend2/8);
-       var penh2=parseFloat($("#penh2").val());
-       $("#arlh2").val(arld2/8);
-       var arlh2=parseFloat($("#arlh2").val());
-       $("#senh2").val(send2/8);
-       var senh2=parseFloat($("#senh2").val());
-       $("#icbfh2").val(icbfd2/8);
-       var icbfh2=parseFloat($("#icbfh2").val());
-       $("#cdch2").val(cdcd2/8);
-       var cdch2=parseFloat($("#cdcd2").val());
-       $("#taeh2").val(taed2/8);
-       
-       
-       
-       $("#cesm2").val(tdm1*0.0833);
-       var cesm2=parseFloat($("#cesm2").val());
-       $("#pdsm2").val(tdm1*0.0833);
-       var pdsm2=parseFloat($("#pdsm2").val());
-       $("#idcm2").val(tdm1*0.01);
-       var idcm2=parseFloat($("#idcm2").val());
-       $("#vam2").val(sm1*0.0417);
-       var vam2=parseFloat($("#vam2").val());
-       
-       $("#tpm2").val(cesm2+pdsm2+idcm2+vam2);
-       
-       
-       $("#cesd2").val(tdd1*0.0833);
-       var cesd2=parseFloat($("#cesd2").val());
-       $("#pdsd2").val(tdd1*0.0833);
-       var pdsd2=parseFloat($("#pdsd2").val());
-       $("#idcd2").val(tdd1*0.01);
-       var idcd2=parseFloat($("#idcd2").val());
-       $("#vad2").val(sd11*0.0417);
-       var vad2=parseFloat($("#vad2").val());
-       
-       $("#tpd2").val(cesd2+pdsd2+idcd2+vad2);
-       var tpd2=parseFloat($("#tpd2").val());
-       
-      $("#cesh2").val(cesd2/8);
-       var cesh2=parseFloat($("#cesh2").val());
-       $("#pdsh2").val(pdsd2/8);
-       var pdsh2=parseFloat($("#pdsh2").val());
-       $("#idch2").val(idcd2/8);
-       var idch2=parseFloat($("#idch2").val());
-       $("#vah2").val(vad2/8);
-       var vah2=parseFloat($("#vah2").val());
-       
-       $("#tph2").val(tpd2/8);
-       
-         var taem2=parseFloat($("#taem2").val());
-         var tpm2=parseFloat($("#tpm2").val());
-         
-       $("#tbcmdom2").val(tdm1+taem2+tpm2);
-       var tbcmdom2=parseFloat($("#tbcmdom2").val());
-       $("#tbcmdod2").val(tdd1+taed2+tpd2);
-       var tbcmdod2=parseFloat($("#tbcmdod2").val());
-       $("#tbcmdoh2").val(tbcmdod2/8);
-        var tbcmdoh2=parseFloat($("#tbcmdoh2").val());
-       
-        $("#comm2").val(tbcmdom2*0.1);
-        var comm2=parseFloat($("#comm2").val());
-        $("#comd2").val(tbcmdod2*0.1);
-        var comd2=parseFloat($("#comd2").val());
-        $("#comh2").val(comd2/8);
-        var comh2=parseFloat($("#comh2").val());
-        
-        
-        $("#ivam2").val(comm2*0.19);
-        var ivam2=parseFloat($("#ivam2").val());
-        $("#ivad2").val(comd2*0.19);
-        var ivad2=parseFloat($("#ivad2").val());
-        $("#ivah2").val(ivad2/8);
-        var ivah2=parseFloat($("#ivah2").val());
-       
-       
-       $("#tcmdom2").val(tbcmdom2+comm2+ivam2);
-       $("#tcmdod2").val(tbcmdod2+comd2+ivad2);
-       var tcmdod2=parseFloat($("#tcmdod2").val());
-       $("#tcmdoh2").val(tcmdod2/8);
-       
-      
-       
-        
+
+        $("#salm1").val(salariom * 0.4);
+        $("#penm1").val(salariom * 0.4);
+        var salm1 = parseFloat($("#salm1").val());
+        var penm1 = parseFloat($("#penm1").val());
+        $("#tdm2").val(salm1 + penm1);
+        $("#sald1").val((tdd1 - sdtd1) * 0.04);
+        var sald1 = parseFloat($("#sald1").val());
+        $("#salh1").val(sald1 / 8);
+        var salh1 = parseFloat($("#salh1").val());
+        $("#pend1").val(sald1);
+        var pend1 = parseFloat($("#pend1").val());
+        $("#penh1").val(salh1);
+
+
+        var penh1 = parseFloat($("#penh1").val());
+        $("#tdm2").val(salm1 + penm1);
+        $("#tdd2").val(sald1 + pend1);
+        $("#tdh2").val(salh1 + penh1);
+
+        var sm1 = parseFloat($("#sm1").val());
+        $("#salm2").val(sm1 * 0.085);
+        var salm2 = parseFloat($("#salm2").val());
+        $("#penm2").val(sm1 * 0.12);
+        var penm2 = parseFloat($("#penm2").val());
+        $("#arlm2").val(sm1 * 0.00522);
+        var arlm2 = parseFloat($("#arlm2").val());
+        $("#senm2").val(sm1 * 0.02);
+        var senm2 = parseFloat($("#senm2").val());
+        $("#icbfm2").val(sm1 * 0.03);
+        var icbfm2 = parseFloat($("#icbfm2").val());
+        $("#cdcm2").val(sm1 * 0.04);
+        var cdcm2 = parseFloat($("#cdcm2").val());
+        $("#taem2").val(salm2 + penm2 + arlm2 + senm2 + icbfm2 + cdcm2);
+
+        /******/
+
+        var tdd1 = parseFloat($("#tdd1").val());
+
+        $("#sald2").val((tdd1 - sdtd1) * 0.085);
+        var sald2 = parseFloat($("#sald2").val());
+        $("#pend2").val((tdd1 - sdtd1) * 0.12);
+        var pend2 = parseFloat($("#pend2").val());
+        $("#arld2").val((tdd1 - sdtd1) * 0.00522);
+        var arld2 = parseFloat($("#arld2").val());
+        $("#send2").val((tdd1 - sdtd1) * 0.02);
+        var send2 = parseFloat($("#send2").val());
+        $("#icbfd2").val((tdd1 - sdtd1) * 0.03);
+        var icbfd2 = parseFloat($("#icbfd2").val());
+        $("#cdcd2").val((tdd1 - sdtd1) * 0.04);
+        var cdcd2 = parseFloat($("#cdcd2").val());
+        $("#taed2").val(sald2 + pend2 + arld2 + send2 + icbfd2 + cdcd2);
+        var taed2 = parseFloat($("#taed2").val());
+
+        $("#salh2").val(sald2 / 8);
+        var salh2 = parseFloat($("#salh2").val());
+        $("#penh2").val(pend2 / 8);
+        var penh2 = parseFloat($("#penh2").val());
+        $("#arlh2").val(arld2 / 8);
+        var arlh2 = parseFloat($("#arlh2").val());
+        $("#senh2").val(send2 / 8);
+        var senh2 = parseFloat($("#senh2").val());
+        $("#icbfh2").val(icbfd2 / 8);
+        var icbfh2 = parseFloat($("#icbfh2").val());
+        $("#cdch2").val(cdcd2 / 8);
+        var cdch2 = parseFloat($("#cdcd2").val());
+        $("#taeh2").val(taed2 / 8);
+
+
+
+        $("#cesm2").val(tdm1 * 0.0833);
+        var cesm2 = parseFloat($("#cesm2").val());
+        $("#pdsm2").val(tdm1 * 0.0833);
+        var pdsm2 = parseFloat($("#pdsm2").val());
+        $("#idcm2").val(tdm1 * 0.01);
+        var idcm2 = parseFloat($("#idcm2").val());
+        $("#vam2").val(sm1 * 0.0417);
+        var vam2 = parseFloat($("#vam2").val());
+
+        $("#tpm2").val(cesm2 + pdsm2 + idcm2 + vam2);
+
+
+        $("#cesd2").val(tdd1 * 0.0833);
+        var cesd2 = parseFloat($("#cesd2").val());
+        $("#pdsd2").val(tdd1 * 0.0833);
+        var pdsd2 = parseFloat($("#pdsd2").val());
+        $("#idcd2").val(tdd1 * 0.01);
+        var idcd2 = parseFloat($("#idcd2").val());
+        $("#vad2").val(sd11 * 0.0417);
+        var vad2 = parseFloat($("#vad2").val());
+
+        $("#tpd2").val(cesd2 + pdsd2 + idcd2 + vad2);
+        var tpd2 = parseFloat($("#tpd2").val());
+
+        $("#cesh2").val(cesd2 / 8);
+        var cesh2 = parseFloat($("#cesh2").val());
+        $("#pdsh2").val(pdsd2 / 8);
+        var pdsh2 = parseFloat($("#pdsh2").val());
+        $("#idch2").val(idcd2 / 8);
+        var idch2 = parseFloat($("#idch2").val());
+        $("#vah2").val(vad2 / 8);
+        var vah2 = parseFloat($("#vah2").val());
+
+        $("#tph2").val(tpd2 / 8);
+
+        var taem2 = parseFloat($("#taem2").val());
+        var tpm2 = parseFloat($("#tpm2").val());
+
+        $("#tbcmdom2").val(tdm1 + taem2 + tpm2);
+        var tbcmdom2 = parseFloat($("#tbcmdom2").val());
+        $("#tbcmdod2").val(tdd1 + taed2 + tpd2);
+        var tbcmdod2 = parseFloat($("#tbcmdod2").val());
+        $("#tbcmdoh2").val(tbcmdod2 / 8);
+        var tbcmdoh2 = parseFloat($("#tbcmdoh2").val());
+
+        $("#comm2").val(tbcmdom2 * 0.1);
+        var comm2 = parseFloat($("#comm2").val());
+        $("#comd2").val(tbcmdod2 * 0.1);
+        var comd2 = parseFloat($("#comd2").val());
+        $("#comh2").val(comd2 / 8);
+        var comh2 = parseFloat($("#comh2").val());
+
+
+        $("#ivam2").val(comm2 * 0.19);
+        var ivam2 = parseFloat($("#ivam2").val());
+        $("#ivad2").val(comd2 * 0.19);
+        var ivad2 = parseFloat($("#ivad2").val());
+        $("#ivah2").val(ivad2 / 8);
+        var ivah2 = parseFloat($("#ivah2").val());
+
+
+        $("#tcmdom2").val(tbcmdom2 + comm2 + ivam2);
+        $("#tcmdod2").val(tbcmdod2 + comd2 + ivad2);
+        var tcmdod2 = parseFloat($("#tcmdod2").val());
+        $("#tcmdoh2").val(tcmdod2 / 8);
+
+
+
+
     }
     function operar2() {
         var sm3 = parseFloat($("#sm3").val());
@@ -2276,21 +2278,21 @@
         var hhhddd = parseFloat($("#hhhddd" + i).val());
         var ho31 = parseFloat($("#ho31").val());
 
-        var por=0;
-        if(i==1){
-           por=0.35;
-        }else if(i==2){
-            por=0.75;
-        }else if(i==3){
-            por=1.1;
-        }else if(i==4){
-            por=1.25;
-        }else if(i==5){
-            por=1.75;
-        }else if(i==6){
-            por=2;
-        }else if(i==7){
-            por=2.5;
+        var por = 0;
+        if (i == 1) {
+            por = 0.35;
+        } else if (i == 2) {
+            por = 0.75;
+        } else if (i == 3) {
+            por = 1.1;
+        } else if (i == 4) {
+            por = 1.25;
+        } else if (i == 5) {
+            por = 1.75;
+        } else if (i == 6) {
+            por = 2;
+        } else if (i == 7) {
+            por = 2.5;
         }
         $("#ssss" + i).val(ho31 * por * hhhddd);
 
@@ -2318,197 +2320,205 @@
         $("#tdeduccion31").val(salud31 + pension31);
         var tdeduccion31 = parseFloat($("#tdeduccion31").val());
         $("#tap31").val(td31 - tdeduccion31);
-        
-        $("#aaaa1").val((td31-ssss0)*0.085);
-        var aaaa1=parseFloat($("#aaaa1").val());
-         $("#aaaa2").val((td31-ssss0)*0.12);
-        var aaaa2=parseFloat($("#aaaa2").val());
-         $("#aaaa3").val((td31-ssss0)*0.00522);
-        var aaaa3=parseFloat($("#aaaa3").val());
-         $("#aaaa4").val((td31-ssss0)*0.02);
-        var aaaa4=parseFloat($("#aaaa4").val());
-         $("#aaaa5").val((td31-ssss0)*0.03);
-        var aaaa5=parseFloat($("#aaaa5").val());
-         $("#aaaa6").val((td31-ssss0)*0.04);
-        var aaaa6=parseFloat($("#aaaa6").val());
-        $("#tae31").val(aaaa1+aaaa2+aaaa3+aaaa4+aaaa5+aaaa6);
-        var tae31=parseFloat($("#tae31").val());
-        
-        $("#cesantia31").val(td31*0.0833);
-        var cesantia31=parseFloat();
-        $("#pds31").val(td31*0.0833);
-        var pds31=parseFloat();
-        $("#idc31").val(td31*0.01);
-        var idc31=parseFloat();
-        $("#vacaciones31").val(td31*0.0417);
-        var vacaciones31=parseFloat();
-        var h1jdt31=parseFloat($("#h1jdt31").val());
+
+        $("#aaaa1").val((td31 - ssss0) * 0.085);
+        var aaaa1 = parseFloat($("#aaaa1").val());
+        $("#aaaa2").val((td31 - ssss0) * 0.12);
+        var aaaa2 = parseFloat($("#aaaa2").val());
+        $("#aaaa3").val((td31 - ssss0) * 0.00522);
+        var aaaa3 = parseFloat($("#aaaa3").val());
+        $("#aaaa4").val((td31 - ssss0) * 0.02);
+        var aaaa4 = parseFloat($("#aaaa4").val());
+        $("#aaaa5").val((td31 - ssss0) * 0.03);
+        var aaaa5 = parseFloat($("#aaaa5").val());
+        $("#aaaa6").val((td31 - ssss0) * 0.04);
+        var aaaa6 = parseFloat($("#aaaa6").val());
+        $("#tae31").val(aaaa1 + aaaa2 + aaaa3 + aaaa4 + aaaa5 + aaaa6);
+        var tae31 = parseFloat($("#tae31").val());
+
+        $("#cesantia31").val(td31 * 0.0833);
+        var cesantia31 = parseFloat();
+        $("#pds31").val(td31 * 0.0833);
+        var pds31 = parseFloat();
+        $("#idc31").val(td31 * 0.01);
+        var idc31 = parseFloat();
+        $("#vacaciones31").val(td31 * 0.0417);
+        var vacaciones31 = parseFloat();
+        var h1jdt31 = parseFloat($("#h1jdt31").val());
         //pendiente por trabajar la variable de dotación(TOTAL DOTACION HORA) para multiplicar por h1jdt31
-        var to06=parseFloat($("#to06").val());
-        $("#dotaciones31").val(to06*h1jdt31);
-        var dotaciones31=parseFloat();
-        $("#tp31").val(cesantia31+pds31+idc31+vacaciones31+dotaciones31);
-        
-        
-        
-        
-        
-        
+        var to06 = parseFloat($("#to06").val());
+        $("#dotaciones31").val(to06 * h1jdt31);
+        var dotaciones31 = parseFloat();
+        $("#tp31").val(cesantia31 + pds31 + idc31 + vacaciones31 + dotaciones31);
+
+
+
+
+
+
     }
     function vaciarhhh(i) {
         $("#hhh" + i).val("");
     }
     function vaciarddd(i) {
         $("#ddd" + i).val("");
-    
+
     }
-    
-    function dotaciones(){
-        var i=1;
-        var ch=0;
-        while(i<=8){
-            ch=ch+parseFloat($("#ch"+i).val());
+
+    function dotaciones() {
+        var i = 1;
+        var ch = 0;
+        while (i <= 8) {
+            ch = ch + parseFloat($("#ch" + i).val());
             i++;
         }
         $("#to1").val(ch);
-        var to1=parseFloat($("#to1").val());
-        
-        i=1;
-        var coc=0;
-        var bar=0;
-        
-         var coor0=0;
-        while(i<=7){
-            coc=coc+parseFloat($("#coc"+i).val());
-            bar=bar+parseFloat($("#bar"+i).val());
-            coor0=coor0+parseFloat($("#coor0"+i).val());
-           
+        var to1 = parseFloat($("#to1").val());
+
+        i = 1;
+        var coc = 0;
+        var bar = 0;
+
+        var coor0 = 0;
+        while (i <= 7) {
+            coc = coc + parseFloat($("#coc" + i).val());
+            bar = bar + parseFloat($("#bar" + i).val());
+            coor0 = coor0 + parseFloat($("#coor0" + i).val());
+
             i++;
         }
         $("#to2").val(coc);
-        var to2=parseFloat($("#to2").val());
+        var to2 = parseFloat($("#to2").val());
         $("#to10").val(bar);
-        var to10=parseFloat($("#to10").val());
+        var to10 = parseFloat($("#to10").val());
         $("#to15").val(coor0);
-        var to15=parseFloat($("#to15").val());
-        
-        
-        
-        
-        i=1;
-        var au=0;
-        var stew=0;
-         
-        while(i<=6){
-           
-            au=au+parseFloat($("#au"+i).val());
-            stew=stew+parseFloat($("#stew"+i).val());
+        var to15 = parseFloat($("#to15").val());
+
+
+
+
+        i = 1;
+        var au = 0;
+        var stew = 0;
+
+        while (i <= 6) {
+
+            au = au + parseFloat($("#au" + i).val());
+            stew = stew + parseFloat($("#stew" + i).val());
             i++;
         }
         $("#to3").val(au);
-        var to3=parseFloat($("#to3").val());
+        var to3 = parseFloat($("#to3").val());
         $("#to4").val(stew);
-        var to4=parseFloat($("#to4").val());
-        
-        i=1;
-        var suh=0;
-        while(i<=5){
-            suh=suh+parseFloat($("#suh"+i).val());
+        var to4 = parseFloat($("#to4").val());
+
+        i = 1;
+        var suh = 0;
+        while (i <= 5) {
+            suh = suh + parseFloat($("#suh" + i).val());
             i++;
         }
         $("#to5").val(suh);
-        var to5=parseFloat($("#to5").val());
-        
-        i=1;
-        var capi=0;
-        while(i<=9){
-            capi=capi+parseFloat($("#capi"+i).val());
+        var to5 = parseFloat($("#to5").val());
+
+        i = 1;
+        var capi = 0;
+        while (i <= 9) {
+            capi = capi + parseFloat($("#capi" + i).val());
             i++;
         }
         $("#to6").val(capi);
-        var to6=parseFloat($("#to6").val());
-        
-        i=1;
-        var anf=0;
-        while(i<=10){
-            anf=anf+parseFloat($("#anf"+i).val());
+        var to6 = parseFloat($("#to6").val());
+
+        i = 1;
+        var anf = 0;
+        while (i <= 10) {
+            anf = anf + parseFloat($("#anf" + i).val());
             i++;
         }
         $("#to7").val(anf);
-        var to7=parseFloat($("#to7").val());
-       /**/ 
-        i=1;
-        var mess=0;
-        while(i<=11){
-            mess=mess+parseFloat($("#mess"+i).val());
+        var to7 = parseFloat($("#to7").val());
+        /**/
+        i = 1;
+        var mess = 0;
+        while (i <= 11) {
+            mess = mess + parseFloat($("#mess" + i).val());
             i++;
         }
         $("#to8").val(mess);
-        var to8=parseFloat($("#to8").val());
-        
-          
-        i=1;
-        var somm=0;
-        var gs0=0;
-        var mant=0;
-        while(i<=6){
-            somm=somm+parseFloat($("#somm"+i).val());
-            gs0=gs0+parseFloat($("#gs0"+i).val());
-            mant=mant+parseFloat($("#mant"+i).val());
+        var to8 = parseFloat($("#to8").val());
+
+
+        i = 1;
+        var somm = 0;
+        var gs0 = 0;
+        var mant = 0;
+        while (i <= 6) {
+            somm = somm + parseFloat($("#somm" + i).val());
+            gs0 = gs0 + parseFloat($("#gs0" + i).val());
+            mant = mant + parseFloat($("#mant" + i).val());
             i++;
         }
         $("#to9").val(somm);
-        var to9=parseFloat($("#to9").val());
+        var to9 = parseFloat($("#to9").val());
         $("#to14").val(gs0);
-        var to14=parseFloat($("#to14").val());
+        var to14 = parseFloat($("#to14").val());
         $("#to16").val(mant);
-        var to16=parseFloat($("#to16").val());
-        
-        i=1;
-        var admee=0;
-        var port=0;
-        var vp=0;
-        while(i<=4){
-            admee=admee+parseFloat($("#admee"+i).val());
-            port=port+parseFloat($("#port"+i).val());
-            vp=vp+parseFloat($("#vp"+i).val());
+        var to16 = parseFloat($("#to16").val());
+
+        i = 1;
+        var admee = 0;
+        var port = 0;
+        var vp = 0;
+        while (i <= 4) {
+            admee = admee + parseFloat($("#admee" + i).val());
+            port = port + parseFloat($("#port" + i).val());
+            vp = vp + parseFloat($("#vp" + i).val());
             i++;
         }
         $("#to11").val(admee);
-        var to11=parseFloat($("#to11").val());
+        var to11 = parseFloat($("#to11").val());
         $("#to12").val(port);
-        var to12=parseFloat($("#to12").val());
+        var to12 = parseFloat($("#to12").val());
         $("#to13").val(vp);
-        var to13=parseFloat($("#to13").val());
-        
-        
-        i=1;
-        var edpp=0;
-        while(i<=15){
-           edpp=edpp+parseFloat($("#edpp"+i).val());
-            i++; 
+        var to13 = parseFloat($("#to13").val());
+
+
+        i = 1;
+        var edpp = 0;
+        while (i <= 15) {
+            edpp = edpp + parseFloat($("#edpp" + i).val());
+            i++;
         }
-         $("#to17").val(edpp);
-        var to17=parseFloat($("#to17").val());
-        
-        
-         $("#to01").val(to11+to10+to9+to8+to7+to6+to5+to4+to3+to2+to1);
-         $("#to02").val(to12+to13+to14+to15+to16);
-         var to02=parseFloat($("#to02").val());
-         var to01=parseFloat($("#to01").val());
-        
-        $("#to03").val(to17+to02+to01);
-        var to03=parseFloat($("#to03").val());
-         $("#to04").val(to03/4);
-         var to04=parseFloat($("#to04").val());
-         $("#to05").val(to04/30);
-         var to05=parseFloat($("#to05").val());
-         $("#to06").val(to05/8);
-         var to06=parseFloat($("#to06").val());
-        
-        
+        $("#to17").val(edpp);
+        var to17 = parseFloat($("#to17").val());
+
+
+        $("#to01").val(to11 + to10 + to9 + to8 + to7 + to6 + to5 + to4 + to3 + to2 + to1);
+        $("#to02").val(to12 + to13 + to14 + to15 + to16);
+        var to02 = parseFloat($("#to02").val());
+        var to01 = parseFloat($("#to01").val());
+
+        $("#to03").val(to17 + to02 + to01);
+        var to03 = parseFloat($("#to03").val());
+        $("#to04").val(to03 / 4);
+        var to04 = parseFloat($("#to04").val());
+        $("#to05").val(to04 / 30);
+        var to05 = parseFloat($("#to05").val());
+        $("#to06").val(to05 / 8);
+        var to06 = parseFloat($("#to06").val());
+
+
     }
-    
+    function imprSelec(i) {
+       
+        $(document).ready(function () {
+       
+          $('#seccion'+i).printThis();
+      
+      });
+    }
+  </script>
 
 
 </script>
