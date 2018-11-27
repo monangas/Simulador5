@@ -2112,6 +2112,124 @@
        $("#tdd2").val(sald1+pend1);
        $("#tdh2").val(salh1+penh1);
        
+       var sm1=parseFloat($("#sm1").val());
+       $("#salm2").val(sm1*0.085);
+       var salm2=parseFloat($("#salm2").val());
+       $("#penm2").val(sm1*0.12);
+       var penm2=parseFloat($("#penm2").val());
+       $("#arlm2").val(sm1*0.00522);
+       var arlm2=parseFloat($("#arlm2").val());
+       $("#senm2").val(sm1*0.02);
+       var senm2=parseFloat($("#senm2").val());
+       $("#icbfm2").val(sm1*0.03);
+       var icbfm2=parseFloat($("#icbfm2").val());
+       $("#cdcm2").val(sm1*0.04);
+       var cdcm2=parseFloat($("#cdcm2").val());
+       $("#taem2").val(salm2+penm2+arlm2+senm2+icbfm2+cdcm2);
+       
+       /******/
+       
+      var tdd1=parseFloat($("#tdd1").val());
+         
+       $("#sald2").val((tdd1-sdtd1)*0.085);
+       var sald2=parseFloat($("#sald2").val());
+       $("#pend2").val((tdd1-sdtd1)*0.12);
+       var pend2=parseFloat($("#pend2").val());
+       $("#arld2").val((tdd1-sdtd1)*0.00522);
+       var arld2=parseFloat($("#arld2").val());
+       $("#send2").val((tdd1-sdtd1)*0.02);
+       var send2=parseFloat($("#send2").val());
+       $("#icbfd2").val((tdd1-sdtd1)*0.03);
+       var icbfd2=parseFloat($("#icbfd2").val());
+       $("#cdcd2").val((tdd1-sdtd1)*0.04);
+       var cdcd2=parseFloat($("#cdcd2").val());
+       $("#taed2").val(sald2+pend2+arld2+send2+icbfd2+cdcd2);
+       var taed2=parseFloat($("#taed2").val());
+       
+       $("#salh2").val(sald2/8);
+       var salh2=parseFloat($("#salh2").val());
+       $("#penh2").val(pend2/8);
+       var penh2=parseFloat($("#penh2").val());
+       $("#arlh2").val(arld2/8);
+       var arlh2=parseFloat($("#arlh2").val());
+       $("#senh2").val(send2/8);
+       var senh2=parseFloat($("#senh2").val());
+       $("#icbfh2").val(icbfd2/8);
+       var icbfh2=parseFloat($("#icbfh2").val());
+       $("#cdch2").val(cdcd2/8);
+       var cdch2=parseFloat($("#cdcd2").val());
+       $("#taeh2").val(taed2/8);
+       
+       
+       
+       $("#cesm2").val(tdm1*0.0833);
+       var cesm2=parseFloat($("#cesm2").val());
+       $("#pdsm2").val(tdm1*0.0833);
+       var pdsm2=parseFloat($("#pdsm2").val());
+       $("#idcm2").val(tdm1*0.01);
+       var idcm2=parseFloat($("#idcm2").val());
+       $("#vam2").val(sm1*0.0417);
+       var vam2=parseFloat($("#vam2").val());
+       
+       $("#tpm2").val(cesm2+pdsm2+idcm2+vam2);
+       
+       
+       $("#cesd2").val(tdd1*0.0833);
+       var cesd2=parseFloat($("#cesd2").val());
+       $("#pdsd2").val(tdd1*0.0833);
+       var pdsd2=parseFloat($("#pdsd2").val());
+       $("#idcd2").val(tdd1*0.01);
+       var idcd2=parseFloat($("#idcd2").val());
+       $("#vad2").val(sd11*0.0417);
+       var vad2=parseFloat($("#vad2").val());
+       
+       $("#tpd2").val(cesd2+pdsd2+idcd2+vad2);
+       var tpd2=parseFloat($("#tpd2").val());
+       
+      $("#cesh2").val(cesd2/8);
+       var cesh2=parseFloat($("#cesh2").val());
+       $("#pdsh2").val(pdsd2/8);
+       var pdsh2=parseFloat($("#pdsh2").val());
+       $("#idch2").val(idcd2/8);
+       var idch2=parseFloat($("#idch2").val());
+       $("#vah2").val(vad2/8);
+       var vah2=parseFloat($("#vah2").val());
+       
+       $("#tph2").val(tpd2/8);
+       
+         var taem2=parseFloat($("#taem2").val());
+         var tpm2=parseFloat($("#tpm2").val());
+         
+       $("#tbcmdom2").val(tdm1+taem2+tpm2);
+       var tbcmdom2=parseFloat($("#tbcmdom2").val());
+       $("#tbcmdod2").val(tdd1+taed2+tpd2);
+       var tbcmdod2=parseFloat($("#tbcmdod2").val());
+       $("#tbcmdoh2").val(tbcmdod2/8);
+        var tbcmdoh2=parseFloat($("#tbcmdoh2").val());
+       
+        $("#comm2").val(tbcmdom2*0.1);
+        var comm2=parseFloat($("#comm2").val());
+        $("#comd2").val(tbcmdod2*0.1);
+        var comd2=parseFloat($("#comd2").val());
+        $("#comh2").val(comd2/8);
+        var comh2=parseFloat($("#comh2").val());
+        
+        
+        $("#ivam2").val(comm2*0.19);
+        var ivam2=parseFloat($("#ivam2").val());
+        $("#ivad2").val(comd2*0.19);
+        var ivad2=parseFloat($("#ivad2").val());
+        $("#ivah2").val(ivad2/8);
+        var ivah2=parseFloat($("#ivah2").val());
+       
+       
+       $("#tcmdom2").val(tbcmdom2+comm2+ivam2);
+       $("#tcmdod2").val(tbcmdod2+comd2+ivad2);
+       var tcmdod2=parseFloat($("#tcmdod2").val());
+       $("#tcmdoh2").val(tcmdod2/8);
+       
+      
+       
         
     }
     function operar2() {
