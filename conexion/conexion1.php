@@ -4,7 +4,7 @@ class conexion {
 
     var $servername = "localhost";
     var $username = "root";
-    var $password = "123456";
+    var $password = "";
     var $database="id6475911_simulador";
     var $conn;
 

@@ -69,7 +69,16 @@
 
                         <li><a href="../modulo1/index.php">Módulo 1</a></li>
                         <li><a href="../modulo2/index.php">Módulo 2</a></li>
-                        <li><a href="#">Módulo 3</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Módulo 3<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="modulo32.php">Alimentos</a></li>
+                                <li><a href="#">Costos</a></li>
+                               
+
+                            </ul>
+                        </li>
+                        
                         <li><a href="../modulo4/index.php">Módulo 4</a></li>
 
                     </ul>
@@ -86,18 +95,7 @@
         <br>
         <br>
 
-        <section id="s2">
-            <div class="container">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Consultar receta</div>
-                    <div class="panel-body" style="overflow: scroll;height: 315px;">
-                        <?php
-                        require '../administrador/ingredientes/consultarRecetas.php';
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
 
         <?php
         require '../administrador/costo/costo.php';

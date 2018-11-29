@@ -38,6 +38,15 @@
                 <li><a href="../../tipologia/tipologia.php">Tipología</a></li>
                 <li><a href="../../eventos/eventos.php">Eventos</a></li>
                 <li><a href="../../administrador/usuarios/crearUsuarios.php">Gestión usuarios</a></li>
+                <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Costos<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../administrador/alimentos.php">Alimentos</a></li>
+                                <li><a href="../administrador/costo.php">Costos</a></li>
+                                
+
+                            </ul>
+                        </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
 

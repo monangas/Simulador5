@@ -1,4 +1,3 @@
-
 <?php
 include_once '../conexion/conexion1.php';
 $con = new conexion();

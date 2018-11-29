@@ -380,8 +380,8 @@
                                             <td colspan="3"><input class="form-control" id="nombre"></td>   
                                         </tr>
                                         <tr>
-                                            <th>Auxilio mensual (S.M.M.L.V.):</th>
-                                            <td colspan="3"><input class="form-control" id="ai1"></td>
+                                            <th class="requerido">Auxilio mensual (S.M.M.L.V.):</th>
+                                            <td colspan="3"><input class="form-control" id="ai1" type="number"></td>
                                         </tr>
                                         <tr>
                                             <th>Fecha:</th>
@@ -392,8 +392,8 @@
                                             <td colspan="3"><input class="form-control" id="horariot"></td>
                                         </tr>
                                         <tr>
-                                            <th>Número de días del evento.</th>
-                                            <td colspan="3"><input class="form-control" id="nde"></td>
+                                            <th  class="requerido">Número de días del evento.</th>
+                                            <td colspan="3"><input class="form-control" id="nde" type="number"></td>
                                         </tr>
                                         <tr>
                                             <th>Valor del turno mes.</th>
@@ -422,8 +422,8 @@
 
                                         </tr>
                                         <tr>
-                                            <td>Salario (S.M.N.L.V.)</td>
-                                            <td><input class="form-control" id="salarioc1"></td>
+                                            <td class="requerido">Salario (S.M.N.L.V.)</td>
+                                            <td><input class="form-control" id="salarioc1" type="number"></td>
                                             <td><input class="form-control" id="salarioc2" readonly=""></td>
                                             <td><input class="form-control" id="salarioc3" readonly=""></td>
 
@@ -532,7 +532,7 @@
                                     <td class="requerido">
                                         SALARIO MENSUAL
                                     </td>
-                                    <td ><input class="form-control" id="sm3">
+                                    <td ><input class="form-control" id="sm3" type="number">
                                     </td>
                                     <td >
                                         JORNADA ORDINARIA<input type="checkbox" class="form-control" id="jo3">
@@ -568,7 +568,7 @@
                                         NUMERO DE DIAS  DEL EVENTO
                                     </td>
                                     <td >
-                                        <input class="form-control" id="nddde3">
+                                        <input class="form-control" id="nddde3" type="number">
                                     </td>
                                     <td colspan=2 rowspan=2 >
 
@@ -579,7 +579,7 @@
                                         NUMERO DE HORAS DEL EVENTO
                                     </td>
                                     <td >
-                                        <input class="form-control" id="ndhde3">
+                                        <input class="form-control" id="ndhde3" type="number">
                                     </td>
                                     <td colspan=2 rowspan=2 >
 
@@ -606,7 +606,7 @@
                                         SUBSIDIO DE TRANSPORTE
                                     </td>
                                     <td>
-                                        <input class="form-control" id="sdt3">
+                                        <input class="form-control" id="sdt3" type="number">
                                     </td>
                                     <td >
                                         DIARIO<input class="form-control" id="dia4" readonly="">
@@ -974,13 +974,13 @@
                                 </tr>
                                 <tr>
                                     <td class="requerido">salario mensual (s.m.m.l.v.)</td>
-                                    <td align="right"><input type="text" class="form-control" id="salariom"></td>
+                                    <td align="right"><input type="number" class="form-control" id="salariom"></td>
                                     <td colspan="4">condicionante:    se liquida siempre sobre el s.m.m.l.v.</td>
 
                                 </tr>
                                 <tr>
                                     <td class="requerido">subsidio de transporte</td>
-                                    <td align="right" > <input type="text" class="form-control" id="sdt"></td>
+                                    <td align="right" > <input type="number" class="form-control" id="sdt"></td>
                                     <td colspan="4"></td>
                                 </tr>
                                 <tr>
@@ -991,11 +991,11 @@
                                 <tr>
                                     <td colspan="3">horario de trabajo<input type="text" class="form-control" id="hdt1"></td>
 
-                                    <td colspan="3">horas<input type="text" class="form-control" id="h1"  value="0"></td>
+                                    <td colspan="3">horas<input type="number" class="form-control" id="h1"  value="0"></td>
                                 </tr>
                                 <tr>
                                     <td>numero de dias del evento</td>
-                                    <td colspan="5"><input type="text" class="form-control" id="nddde1"  value="0"></td>
+                                    <td colspan="5"><input type="number" class="form-control" id="nddde1"  value="0"></td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">valor del turno mes ($)<input type="text"  class="form-control" id="vdtm1"  value="0" readonly=""></td>
@@ -1348,8 +1348,8 @@
                                         <td ><input class="form-control" id="nombre3"></td>   
                                     </tr>
                                     <tr>
-                                        <th>Valor turno</th>
-                                        <td><input class="form-control" id="vt"></td>
+                                        <th class="requerido">Valor turno</th>
+                                        <td><input class="form-control" id="vt" type="number"></td>
                                     </tr>
                                     <tr>
                                         <th>Fecha.</th>
@@ -1360,8 +1360,8 @@
                                         <td ><input class="form-control" id="ht2"></td>
                                     </tr>
                                     <tr>
-                                        <th>Número de días del evento.</th>
-                                        <td ><input class="form-control" id="ndde2"></td>
+                                        <th class="requerido">Número de días del evento.</th>
+                                        <td ><input class="form-control" id="ndde2" type="number" ></td>
                                     </tr>
                                     <tr>
                                         <th>Costo mano de obra evento.</th>
@@ -1866,19 +1866,19 @@
 
                                 <tr>
                                     <th>TOTAL DOTACION Y EPP</th>
-                                    <td><input type="number"  id="to03" class="form-control totales" readonly=""></td>
+                                    <td><input type="number"  value="0"   id="to03" class="form-control totales" readonly=""></td>
                                 </tr>
                                 <tr>
                                     <th>TOTAL DOTACION MENSUAL</th>
-                                    <td><input type="number"  id="to04" class="form-control totales" readonly=""></td>
+                                    <td><input type="number"  value="0"  id="to04" class="form-control totales" readonly=""></td>
                                 </tr>
                                 <tr>
                                     <th>TOTAL DOTACION DIARIO</th>
-                                    <td><input type="number"  id="to05" class="form-control totales" readonly=""></td>
+                                    <td><input type="number" value="0"   id="to05" class="form-control totales" readonly=""></td>
                                 </tr>
                                 <tr>
                                     <th>TOTAL DOTACION HORA</th>
-                                    <td><input type="number"  id="to06" class="form-control totales" readonly=""></td>
+                                    <td><input type="number" value="0"  id="to06" class="form-control totales" readonly=""></td>
                                 </tr>
 
                             </table>
@@ -2337,19 +2337,19 @@
         var tae31 = parseFloat($("#tae31").val());
 
         $("#cesantia31").val(td31 * 0.0833);
-        var cesantia31 = parseFloat();
+        var cesantia31 = parseFloat($("#cesantia31").val());
         $("#pds31").val(td31 * 0.0833);
-        var pds31 = parseFloat();
+        var pds31 = parseFloat($("#pds31").val());
         $("#idc31").val(td31 * 0.01);
-        var idc31 = parseFloat();
+        var idc31 = parseFloat($("#idc31").val());
         $("#vacaciones31").val(td31 * 0.0417);
-        var vacaciones31 = parseFloat();
+        var vacaciones31 = parseFloat($("#vacaciones31").val());
         var h1jdt31 = parseFloat($("#h1jdt31").val());
         //pendiente por trabajar la variable de dotación(TOTAL DOTACION HORA) para multiplicar por h1jdt31
         var to06 = parseFloat($("#to06").val());
         $("#dotaciones31").val(to06 * h1jdt31);
-        var dotaciones31 = parseFloat();
-        $("#tp31").val(cesantia31 + pds31 + idc31 + vacaciones31 + dotaciones31);
+        var dotaciones31 = parseFloat($("#dotaciones31").val());
+        $("#tp31").val(cesantia31);
 
 
 
@@ -2507,18 +2507,18 @@
         var to05 = parseFloat($("#to05").val());
         $("#to06").val(to05 / 8);
         var to06 = parseFloat($("#to06").val());
-
+        operar5();
 
     }
     function imprSelec(i) {
-       
+
         $(document).ready(function () {
-       
-          $('#seccion'+i).printThis();
-      
-      });
+
+            $('#seccion' + i).printThis();
+
+        });
     }
-  </script>
+</script>
 
 
 </script>
