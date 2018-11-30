@@ -77,53 +77,7 @@ if (!isset($_SESSION['usuario'])) {
             }
         </style>
 
-        <script>
-            var altura;
-            var ingre;
-            var anchura;
-            var um;
-            $(document).ready(function () {
-
-                tamanio();
-                ajax(1);
-
-            });
-            $(document).resize(function () {
-                tamanio();
-            });
-            function tamanio() {
-                altura = $(document).height();
-                anchura = $(document).width();
-            }
-            function agregar() {
-                ingre = document.getElementById("Ingrediente").value;
-                um = document.getElementById("unidad_medida").value;
-                
-
-                ajax(2);
-            }
-            function ajax(n) {
-                var ruta = "";
-                switch (n) {
-                    case 1:
-                        ruta = "ingredientes/listaCheckbox.php";
-                        break;
-                    case 2:
-                        ruta = "ingredientes/crearIngrediente.php?i=" + ingre + "&u=" + um;
-                        break;
-                }
-                var xhttp = new XMLHttpRequest();
-                xhttp.onreadystatechange = function () {
-                    if (this.readyState == 4 && this.status == 200) {
-                        document.getElementById("listaIngredientes").innerHTML = this.responseText;
-                        document.getElementById("Ingrediente").value="";
-                    }
-                };
-                xhttp.open("GET", ruta, true);
-                xhttp.send();
-            }
-
-        </script>
+        
     </head>
     <body>
 
@@ -244,6 +198,52 @@ if (!isset($_SESSION['usuario'])) {
 
 
 
+<script>
+            var altura;
+            var ingre;
+            var anchura;
+            var um;
+            $(document).ready(function () {
 
+                tamanio();
+                ajax(1);
+
+            });
+            $(document).resize(function () {
+                tamanio();
+            });
+            function tamanio() {
+                altura = $(document).height();
+                anchura = $(document).width();
+            }
+            function agregar() {
+                ingre = document.getElementById("Ingrediente").value;
+                um = document.getElementById("unidad_medida").value;
+                
+
+                ajax(2);
+            }
+            function ajax(n) {
+                var ruta = "";
+                switch (n) {
+                    case 1:
+                        ruta = "ingredientes/listaCheckbox.php";
+                        break;
+                    case 2:
+                        ruta = "ingredientes/crearIngrediente.php?i=" + ingre + "&u=" + um;
+                        break;
+                }
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("listaIngredientes").innerHTML = this.responseText;
+                        document.getElementById("Ingrediente").value="";
+                    }
+                };
+                xhttp.open("GET", ruta, true);
+                xhttp.send();
+            }
+
+        </script>
 </body>
 </html>
