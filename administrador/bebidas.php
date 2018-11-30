@@ -137,7 +137,7 @@ if (!isset($_SESSION['usuario'])) {
             <div class="container">
                 <div class="col-sm-6">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Crear bebidas</div>
+                    <div class="panel-heading"><h3>Crear <span class="label label-success">Bebidas</span></h3></div>
                     <div class="panel-body  ">
                         <div class="panel panel-default ">
 
@@ -181,7 +181,7 @@ if (!isset($_SESSION['usuario'])) {
                 </div>
                 <div class="col-sm-6">
                     <div class="panel panel-default ">
-                            <div class="panel-heading">Consultar bebidas</div>
+                        <div class="panel-heading"><h3>Consultar<span class="label label-success">Bebidas</span></h3></div>
                             <div class="panel-body" style="overflow: scroll;height: 368px;">
                                 <?php
                                 require './bebidas/consultarBebidas.php';
@@ -192,7 +192,70 @@ if (!isset($_SESSION['usuario'])) {
             </div>
         </div>
     </section>
-    <section id="s2">
+        
+        
+         <section id="s2">
+            <div class="container">
+                <div class="col-sm-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><h3>Crear <span class="label label-success">Alimento</span></h3></div>
+                    <div class="panel-body  ">
+                        <div class="panel panel-default ">
+
+                            <form method="post" action="alimentos/crearAlimentos.php" target="_self" enctype="multipart/form-data">
+                                <div class="panel-heading"></div>
+                                <div class="panel-body2">
+
+                                    <div class="form-group">
+                                        <label for="alimento">Nombre de la alimento:</label>
+                                        <input type="text" class="form-control" name="alimento" id="alimento" style="text-transform: lowercase;" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Presentacion2">Presentación </label>
+                                        <input type="text" min="1"  name="presentacion2" class="form-control" id="presentacion2" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="grupo2">Grupo </label>
+                                        <select  name="grupo2" class="form-control" id="grupo2" required="">
+                                            <option>AYC - Aves y Caza</option>
+                                            <option>CYS - Carnes y Salsamentaria</option>
+                                            <option>EYE - Empacados y Envasados</option>
+                                            <option>FYV- Frutas y Verduras</option>
+                                            <option>LAC - Lacteos</option>
+                                            <option>PYM - Pescados y Mariscos</option>
+                                           
+
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <button type="submit" class="btn btn-success">Guardar alimento</button>
+                            </form>
+
+
+
+                        </div>
+                        
+
+                    </div>
+                    
+                </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="panel panel-default ">
+                        <div class="panel-heading"><h3>Consultar <span class="label label-success">Alimento</span></h3></div>
+                            <div class="panel-body" style="overflow: scroll;height: 368px;">
+                                <?php
+                                require './alimentos/consultarAlimentos.php';
+                                ?>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="s3">
         <div class="container">
             
         </div>

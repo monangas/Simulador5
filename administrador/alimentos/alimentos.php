@@ -45,4 +45,24 @@
 
         </section>
     </div>
+     <div class="row">
+        <section id="seccion1">
+
+            <div class="panel panel-default">
+                <div class="panel-heading" >Matriz inventario alimentos</div>
+                <div class="panel-body">
+                    <div class="panel panel-default">
+
+                        <?php
+                        @include '../alimentos/consultarAlimentos.php';
+                        @include '../administrador/alimentos/consultarAlimentos.php';
+                        ?>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </div>
 </div>

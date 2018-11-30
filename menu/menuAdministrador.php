@@ -29,9 +29,9 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Gestión Recetario<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="../administrador/a.php">Crear recetas</a></li>
-                        <li><a href="../administrador/a.php"">Consultar recetas</a></li>
-                        <!--                                <li><a href="#s3">Actualizar recetas</a></li>-->
+                        <li><a href="../administrador/a.php">Consultar recetas</a></li>
                         <li><a href="../administrador/eliminarRecetas.php">Eliminar recetas</a></li>
+                        <li><a href="../administrador/bebidas.php">Bebidas y Alimentos</a></li>
 
                     </ul>
                 </li>
@@ -39,10 +39,10 @@
                 <li><a href="../eventos/eventos.php">Eventos</a></li>
                 <li><a href="../administrador/usuarios/crearUsuarios.php">Gestión usuarios</a></li>
                 <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Costos<span class="caret"></span></a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Administración Costos<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="../administrador/alimentos.php">Alimentos</a></li>
-                                <li><a href="../administrador/bebidas.php">Bebidas</a></li>
+                                <li><a href="../administrador/alimentos.php">Consultar Bebidas y Alimentos</a></li>
+                               
                                 <li><a href="../administrador/costo.php">Costos</a></li>
                                 
 

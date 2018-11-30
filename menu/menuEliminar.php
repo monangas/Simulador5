@@ -30,23 +30,22 @@
                     <ul class="dropdown-menu">
                         <li><a href="../administrador/a.php">Crear recetas</a></li>
                         <li><a href="../administrador/a.php">Consultar recetas</a></li>
-                        <!--                                <li><a href="#s3">Actualizar recetas</a></li>-->
                         <li><a href="../administrador/eliminarRecetas.php">Eliminar recetas</a></li>
-
+                        <li><a href="../administrador/bebidas.php">Bebidas y Alimentos</a></li>
                     </ul>
                 </li>
                 <li><a href="../tipologia/tipologia.php">Tipología</a></li>
                 <li><a href="../eventos/eventos.php">Eventos</a></li>
                 <li><a href="../administrador/usuarios/crearUsuarios.php">Gestión usuarios</a></li>
                 <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Costos<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="../administrador/alimentos.php">Alimentos</a></li>
-                                <li><a href="../administrador/costo.php">Costos</a></li>
-                                
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Administración Costos<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../administrador/alimentos.php">Consultar Bebidas y Alimentos</a></li>
+                        <li><a href="../administrador/costo.php">Costos</a></li>
 
-                            </ul>
-                        </li>
+
+                    </ul>
+                </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
 
@@ -65,39 +64,39 @@
 </nav>
 
 
-        <!-- ModalLogin -->
-        <form action="administrador/login.php" method="post" target="_self">
-            <div class="modal fade" id="modalLogin" role="dialog">
-                <div class="modal-dialog">
+<!-- ModalLogin -->
+<form action="administrador/login.php" method="post" target="_self">
+    <div class="modal fade" id="modalLogin" role="dialog">
+        <div class="modal-dialog">
 
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Ingreso</h4>
-                        </div>
-                        <div class="modal-body">
-
-
-                            <div class="form-group">
-                                <label for="usuario">Usuario:</label>
-                                <input type="text" name="usuario" class="form-control" id="usuario">
-                            </div>
-                            <div class="form-group">
-                                <label for="pwd">Password:</label>
-                                <input type="password" name="password" class="form-control" id="pwd">
-                            </div>
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Ingreso</h4>
+                </div>
+                <div class="modal-body">
 
 
+                    <div class="form-group">
+                        <label for="usuario">Usuario:</label>
+                        <input type="text" name="usuario" class="form-control" id="usuario">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" name="password" class="form-control" id="pwd">
+                    </div>
 
 
-                        </div>
-                        <div class="modal-footer">
-                            <button type="reset" class="btn secundario" >Cancelar</button>
-                            <button type="submit" class="btn terciario" >Entrar</button>
-                        </div> 
-                    </div> 
 
+
+                </div>
+                <div class="modal-footer">
+                    <button type="reset" class="btn secundario" >Cancelar</button>
+                    <button type="submit" class="btn terciario" >Entrar</button>
                 </div> 
             </div> 
-        </form>
+
+        </div> 
+    </div> 
+</form>
