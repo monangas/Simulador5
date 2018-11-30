@@ -13,18 +13,42 @@
 
         </div>
         <div id="s3" class="col-sm-6">
-           
-                <div class="panel panel-default">
-                    <div class="panel-heading">Consultar bebida estandar</div>
-                    <div class="panel-body" style="overflow: scroll;height: 315px;">
-                        <?php
-                        require '../administrador/bebidas/consultarBebidaEstandar.php';
-                        ?>
-                    </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">Consultar bebida estandar</div>
+                <div class="panel-body" style="overflow: scroll;height: 315px;">
+                    <?php
+                    require '../administrador/bebidas/consultarBebidaEstandar.php';
+                    ?>
                 </div>
-         
+            </div>
+
         </div>
     </div>
+    
+    <div class="row">
+        <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModalFichaTecnica">Ficha Técnica Inventarios</button>
+        <div id="myModalFichaTecnica" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Ficha Técnica Inventarios</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Some text in the modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br>
     <div class="row">
         <section id="seccion1">
 
@@ -45,7 +69,9 @@
 
         </section>
     </div>
-     <div class="row">
+    
+
+    <div class="row">
         <section id="seccion1">
 
             <div class="panel panel-default">
