@@ -48,9 +48,9 @@ if ($result->num_rows > 0) {
                 echo "</table></div>";
             }
 
-            echo '<h4><button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#collapse' . $i . '"><span class="glyphicon glyphicon-eye-open"></span></button>'
+            echo '<h4><button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#collapsea' . $i . '"><span class="glyphicon glyphicon-eye-open"></span></button>'
             . '' . $row['grupo'] . '</h4>'
-            . ' <div id="collapse' . $i . '" class="collapse">';
+            . ' <div id="collapsea' . $i . '" class="collapse">';
             echo '<table class="table table-responsive table-striped table-bordered"><tr><th colspan="4">' . $row['grupo'] . '</th></tr>';
             $tipo = $row['grupo'];
             $i++;
