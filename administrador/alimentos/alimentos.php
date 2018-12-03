@@ -25,11 +25,11 @@
 
         </div>
     </div>
-    
+
     <div class="row">
         <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModalFichaTecnica">Ficha Técnica Inventarios</button>
         <div id="myModalFichaTecnica" class="modal fade" role="dialog">
-            <div class="modal-dialog">
+            <div class="modal-dialog ">
 
                 <!-- Modal content-->
                 <div class="modal-content">
@@ -38,7 +38,11 @@
                         <h4 class="modal-title">Ficha Técnica Inventarios</h4>
                     </div>
                     <div class="modal-body">
-                        <p>Some text in the modal.</p>
+                        <p>
+                            <?php
+                            include 'alimentos/ficha/ftinventario.php';
+                            ?>
+                        </p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -69,7 +73,7 @@
 
         </section>
     </div>
-    
+
 
     <div class="row">
         <section id="seccion1">
