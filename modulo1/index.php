@@ -75,7 +75,7 @@
                 "keyup": function (event) {
                     $(event.target).val(function (index, value) {
                         return value.replace(/\D/g, "")
-                            .replace(/([0-9])([0-9]{0})$/, '$1$2')
+                            .replace(/([0-9])([0-9]{2})$/, '$1.$2')
                             .replace(/\B(?=(\d{3})+(?!\d)\.?)/g, ",");
                     });
                 }
@@ -86,8 +86,9 @@
 
 <body>
     <div id="monedin" style="visibility: hidden;">
-        <img src="/gif/Monedin_Saludo.gif" /><br>
-        <audio id="holamonedin" src="/audio/Hola.mp3" controls></audio>
+
+        <img src="/gif/.gif" /><br>
+        <audio id="holamonedin" src="/audio/hola1.mp3" controls></audio>
         <h6>¡Escuchame!</h6>
         <input id="botonmone" type="submit" value="Ocultar" onclick="Ocultar()" class="btn btn-primary">
     </div>
@@ -96,80 +97,36 @@
         require_once '../conexion/conexionDB.php';
         ?>
     <br>
-
     <div class="container">
         <div class="panel panel-default panel1" style="height: 520px; overflow-y: scroll">
             <div id="modulo1_t1">
-                <h1 class="tipografia-zurich">Planeaci&oacuten</h1>
+            <hr>
+                <h1 class="tipografia-zurich" style="text-align:center">PLANEACIÓN</h1>
             </div>
-
             <hr>
 
-            <h2 class="text-center" class="tipografia-zurich">Portafolio de Trabajo</h2>
-            <form action="portafolio.php" method="post">
-                <div class="row">
-
-                    <div class="col-md-6">
-                        <table class="table">
+           
+    
+        <div   class="container "  style="width:55%;
+    border-radius: 20px;-webkit-border-radius: 20px;-moz-border-radius:20px;-o-border-radius: 20px;" >
+                                          
+                    <div  class="panel panel-default panel1  " style="height: 300px; overflow-y: scroll; text-align:center">
+                        <hr>
+                        <h4>DATOS DE PERSONA O EMPRESA QUE REALIZA EL EVENTO</h4>
+                        
+                         <table class="table">
                             <tr>
-                                <th scope="row" class="tipografia-calibri">Empresa Cliente</th>
-                                <td><input class="form-control" type="text" name="responsable" required></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="tipografia-calibri">Fecha</th>
-                                <td><input class="form-control" type="date" name="fecha" required></td>
-                            </tr>
-                            <!-- <tr>
-                            <th scope="row">Telefono</th>
-                            <td><input class="form-control" type="tel"></td>
-                        </tr> -->
-
-                            <tr>
-                                <th scope="row" class="tipografia-calibri">Direcci&oacuten</th>
-                                <td><input class="form-control" type="text" required></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="tipografia-calibri">Tipo de evento</th>
-                                <td>
-                                    <select id="tipologias" class="form-control" name="tipologia" required>
-                                        <option value="" class="tipografia-calibri">Seleccione:</option>
-                                        <?php
-                                        $query = $mysqli->query("SELECT idtipologia, tipologia FROM tipologia");
-                                        while ($rows = $query->fetch_assoc()) {
-                                            echo '<option value="'.$rows['tipologia'].'" required>'.$rows['tipologia'].'</option>';
-                                        }
-                                    ?>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="tipografia-calibri">Fecha evento</th>
-                                <td><input class="form-control" type="date" name="fechaevento" required></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="tipografia-calibri">Presupuesto asignado para el evento</th>
-                                <td>
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">$</span>
-                                        </div>
-                                        <input name="presupuesto" id="number" min="1" required class="form-control" aria-label="Amount (to the nearest dollar)">
-                                    </div>
-                                </td>
-                            </tr>
-
-                        </table>
-                    </div>
-
-                    <div class="col-md-6">
-                        <table class="table">
-                            <tr>
-                                <th scope="row" class="tipografia-calibri">Empresa OPC</th>
+                                <th scope="row" class="tipografia-calibri">NOMBRE DE PERSONA O EMPRESA QUE ORGANIZA EL EVENTO</th>
                                 <!--nombre de que-->
                                 <td><input class="form-control" type="text" name="organizador" required></td>
                             </tr>
                             <tr>
-                                <th class="tipografia-calibri">Tipo de empresa</th>
+                                <th scope="row" class="tipografia-calibri">N° DE CEDULA O NIT</th>
+                                <td><input class="form-control" type="number" name="identificacion1" required></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="tipografia-calibri">TIPO DE EMPRESA</th>
+                                
                                 <td> <select id="sociedades" class="form-control mx-3" name="tipoempresa">
                                         <optgroup label="Creado por una persona">
                                             <option value="" data-toggle="modal" data-target="#sociedades_modal" class="tipografia-calibri">Persona
@@ -188,51 +145,232 @@
                                                 en Comandita Simple (S. en C.) </option>
                                             <option value="" data-toggle="modal" data-target="#sociedades_modal" class="tipografia-calibri">Sociedad
                                                 en Comandita por Acciones (S.C.A.)</option>
-                                        </optgroup>
-                                    </select></td>
-                                <div class="container">
-                                    <div class="modal fade" id="sociedades_modal" role="dialog">
-                                        <div class="modal-dialog modal-lg">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h4 class="modal-title">Tipos de Sociedades</h4>
-                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <label for="" class="tipografia-calibri">Bucas el tipo de sociedad
-                                                        que seleccionaste</label>
-                                                    <form class="form-inline mb-2">
-                                                        <select id="sociedades" class="form-control mx-3">
-                                                            <option value="0" class="tipografia-calibri">Seleccione:</option>
-                                                            <?php
-                            $query = $mysqli->query("SELECT id_soc, sociedades FROM sociedades");
-                            while ($rows = $query->fetch_array()) {
-                                echo '<option value="' . $rows['id_soc'] . '">' . $rows['sociedades'] . '</option>';
-                            }
-                            ?>
-                                                        </select>
-
-                                                    </form>
-
-
-                                                    <div class="col-md-8">
-                                                        <textarea readonly class="form-control col-xs-12" rows="13  "
-                                                            id="des_soc" rows="4"></textarea>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-default" data-dismiss="modal"
-                                                            class="tipografia-calibri">Close</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
+                                        </optgroup></td>
                             </tr>
                             <tr>
+                                <th scope="row" class="tipografia-calibri">RECIBIDA POR</th>
+                                <!--nombre de que-->
+                                <td><input class="form-control" type="text" name="RECIBIDA" required></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="tipografia-calibri">FECHA DE SOLICITUD DEL EVENTO</th>
+                                <td><input class="form-control" type="date" name="fecha" required></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="tipografia-calibri">HORA SOLICITUD DEL EVENTO</th>
+                                <td><input class="form-control" type="time" name="hora" required></td>
+                            </tr>
+
+                            </table>
+                    </div>
+        </div>            
+               <br><br>
+         <div  class="container " style="width:55%;
+    border-radius: 20px;-webkit-border-radius: 20px;-moz-border-radius:20px;-o-border-radius: 20px;" >
+                    <div  class="panel panel-default " style=" height: 50%; overflow-y: scroll; text-align:center">
+                    <hr>
+                        <h4>DATOS DEL CLIENTE PARA EL EVENTO</h4>
+                        
+                         <table class="table">
+                         <tr>
+                                <th scope="row" class="tipografia-calibri">EMPRESA QUE SOLICITA EL EVENTO</th>
+                                <td><input class="form-control" type="text" name="responsable" required></td>
+                         </tr>
+                         <tr>
+                                <th scope="row" class="tipografia-calibri">N° DE CEDULA O NIT</th>
+                                <td><input class="form-control" type="number" name="identificacion2" required></td>
+                         </tr>
+                         <tr>
+                                <th scope="row" class="tipografia-calibri">TIPO DE EMPRESA</th>
+                                
+                                <td> <select id="sociedades" class="form-control mx-3" name="tipoempresa">
+                                        <optgroup label="Creado por una persona">
+                                            <option value="" data-toggle="modal" data-target="#sociedades_modal" class="tipografia-calibri">Persona
+                                                natural comerciante</option>
+                                            <option value="" data-toggle="modal" data-target="#sociedades_modal" class="tipografia-calibri">Sociedades
+                                                por Acciones Simplificadas(S.A.S)</option>
+                                        </optgroup>
+                                        <optgroup label="Creada por dos o mas socios">
+                                            <option value="" data-toggle="modal" data-target="#sociedades_modal" class="tipografia-calibri">Sociedad
+                                                Colectiva</option>
+                                            <option value="" data-toggle="modal" data-target="#sociedades_modal" class="tipografia-calibri">Sociedad
+                                                Anónima (S.A.)</option>
+                                            <option value="" data-toggle="modal" data-target="#sociedades_modal" class="tipografia-calibri">Sociedad
+                                                de Responsabilidad Limitada (Ltda.)</option>
+                                            <option value="" data-toggle="modal" data-target="#sociedades_modal" class="tipografia-calibri">Sociedad
+                                                en Comandita Simple (S. en C.) </option>
+                                            <option value="" data-toggle="modal" data-target="#sociedades_modal" class="tipografia-calibri">Sociedad
+                                                en Comandita por Acciones (S.C.A.)</option>
+                                        </optgroup></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="tipografia-calibri">NOMBRE DEL SOLICITANTE</th>
+                                <td><input class="form-control" type="text" name="responsablesolicita" required></td>
+                         </tr>
+                         <tr>
+                                <th scope="row" class="tipografia-calibri">CARGO DEL SOLICITANTE</th>
+                                <td><input class="form-control" type="text" name="cargoresponsable" required></td>
+                         </tr>  
+                         <tr>
+                                <th scope="row" class="tipografia-calibri">DIRECCIÓN</th>
+                                <td><input class="form-control" type="text" required></td>
+                        </tr>
+                        <tr>
+                                <th scope="row" class="tipografia-calibri">CELULAR O TELEFONO</th>
+                                <td><input class="form-control" type="number" required></td>
+                        </tr>
+                        <tr>
+                                <th scope="row" class="tipografia-calibri">EMAIL</th>
+                                <td><input class="form-control" type="email" required></td>
+                            </tr>
+                         </table>
+                </div>
+          </div>
+          <br><br>
+          <div   class="container "  style="width:55%;
+    border-radius: 20px;-webkit-border-radius: 20px;-moz-border-radius:20px;-o-border-radius: 20px;">
+            <div  class="panel panel-default " style=" height: 50%; overflow-y: scroll; text-align:center">   
+                <hr>
+                  <h4>DATOS DEL EVENTO</h4>
+                  <table class="table">
+                  <tr>
+                        <th scope="row" class="tipografia-calibri">Fecha evento</th>
+                        <td><input class="form-control" type="date" name="fechaevento" required></td>
+                 </tr>
+                 <tr>
+                                <th scope="row" class="tipografia-calibri">Hora</th>
+                                <td><input class="form-control" type="time" name="hora" required></td>
+                 </tr>
+                 <tr>
+                                <th scope="row" class="tipografia-calibri">Hora</th>
+                                <td><input class="form-control" type="time" name="hora" required></td>
+                 </tr>
+                 <tr>
+                                <th scope="row" class="tipografia-calibri">CIUDAD DEL EVENTO</th>
+                                <td><input class="form-control" type="text" name="ciudad" required></td>
+                </tr>
+                <tr>
+                                <th scope="row" class="tipografia-calibri">MUNICIPIO O BARRIO DEL EVENTO</th>
+                                <td><input class="form-control" type="text" name="muni" required></td>
+                </tr>
+                <tr>
+                                <th scope="row" class="tipografia-calibri">Tipo de evento</th>
+                                <td>
+                                    <select id="tipologias" class="form-control" name="tipologia" required>
+                                        <option value="" class="tipografia-calibri">Seleccione:</option>
+                                        <?php
+                                        $query = $mysqli->query("SELECT idtipologia, tipologia FROM tipologia");
+                                        while ($rows = $query->fetch_assoc()) {
+                                            echo '<option value="'.$rows['tipologia'].'" required>'.$rows['tipologia'].'</option>';
+                                        }
+                                    ?>
+
+                                    
+                                    </select>
+                                </td>
+                </tr>
+                <tr>
+                <th>
+                    <p class="tipografia-calibri">Selecciona el tipo de evento del cual quieres aprender:</p>
+                     <div class="form-inline mb-2"> 
+                        <label for="" class="tipografia-calibri"></label>
+                        <select id="tipologia" name="hola" class="form-control mx-3" required>
+                            <option value="" class="tipografia-calibri">Seleccione:</option>
+                            <?php
+                            $query = $mysqli->query("SELECT idtipologia, tipologia FROM tipologia");
+                            while ($rows = $query->fetch_array()) {
+                                echo '<option value="'. $rows['idtipologia'] .'">'.$rows['tipologia'].'</option>';
+                            }
+                        ?>
+                        </select>
+                        <!-- <button class="btn btn-primary" class="tipografia-calibri">Select</button> -->
+                     </div> </th>
+                <td>
+                <div class="col-md-8">
+                    <textarea readonly class="form-control" id="des_tip" rows="4"></textarea>
+                </div>
+                </td>
+                </tr>
+                <tr>
+                            <th>
+                <hr>
+
+<p class="tipografia-calibri">Seleccione un evento y los requerimientos necesarios:</p>
+<!-- generate clasificacion checkbox, use of the [] cause php treat it like an array -->
+<div class="row">
+    <div class="card col-md-4 ml-3 py-3 sortable_list connectedSortable">
+
+
+        <select id="tipologias" name="evento" class="form-control" required>
+            <option value="" class="tipografia-calibri">Seleccione:</option>
+            <?php
+                        $query = $mysqli->query("SELECT idtipologia, tipologia FROM tipologia");
+                        while ($rows = $query->fetch_assoc()) {
+                            echo '<option value="'.$rows['tipologia'].'">'.$rows['tipologia'].'</option>';
+                        }
+                    ?>
+        </select>
+        </th>
+        <td>
+        <?php
+        $query = $mysqli->query("SELECT idclasificacion,clasificacion FROM clasificacion");
+        while ($rows = $query->fetch_array()) {
+            echo'<div class="list-group-item checkbox"  id='.$rows['idclasificacion'].'>
+                        
+                        <label id="label1">
+                        <input type="checkbox" name="requerimiento[]" id="check" value="'.$rows['clasificacion'].'">'.$rows['clasificacion'].'
+                         </label>
+                      
+                </div>';
+            }
+    ?>
+        
+</form>
+
+</div>
+
+<div class="card col-md-4 ml-3 py-3 sortable_list connectedSortable"></div>
+
+</div>
+
+<hr>
+<p class="pop"></p>
+
+<hr>
+
+<?php
+
+
+if (isset($_POST['ingresar'])){
+    $con=$_POST['evento'];
+    echo $con;            
+    //extrae los requerimiento seleccionados en forma de string, notar que requerimiento va sin []
+    if (isset($_POST['requerimiento'])){                
+    $requerimientos = implode ( ',', $_POST['requerimiento']);
+   // echo $requerimientos;
+    }else {
+        echo'no ha selecionado ningun requerimiento para su evento';
+    }        
+
+
+    $query = $mysqli->query("SELECT requerimientos FROM tipologia where tipologia='$con'");
+    $rows = $query->fetch_array();            
+    if(isset ($requerimientos)){
+        if($requerimientos==$rows['requerimientos']){
+        echo 'Los requerimientos son los correctos';
+        }else{
+        echo 'Esos no son los requerimientos, intentalo de nuevo';
+        }
+    }
+}
+?>
+</td>
+                </tr>
+                <tr>
+                                <th scope="row" class="tipografia-calibri">Asistentes</th>
+                                <td><input class="form-control" name="asistentes" type="number" min="1" required></td>
+                </tr>
+                <tr>
                                 <th scope="row" class="tipografia-calibri">Montaje salon</th>
                                 <td><select name="montaje" id="montajes" class="form-control" required>
                                         <option value="">Seleccione</option>
@@ -258,123 +396,25 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row" class="tipografia-calibri">Hora</th>
-                                <td><input class="form-control" type="time" name="hora" required></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="tipografia-calibri">Locaci&oacuten</th>
-                                <td><input class="form-control" type="text" name="locacion" required></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="tipografia-calibri">Asistentes</th>
-                                <td><input class="form-control" name="asistentes" type="number" min="1" required></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="tipografia-calibri">Notas</th>
+                                <th scope="row" class="tipografia-calibri">OBSERVACIONES</th>
                                 <td><input class="form-control" type="text"></td>
                             </tr>
-                        </table>
-
-                    </div>
-                </div>
-
-                <hr>
-
-                <div class="">
-                    <p class="tipografia-calibri">Selecciona el tipo de evento del cual quieres aprender:</p>
-                     <div class="form-inline mb-2"> 
-                        <label for="" class="tipografia-calibri">Tipologia:</label>
-                        <select id="tipologia" name="hola" class="form-control mx-3" required>
-                            <option value="" class="tipografia-calibri">Seleccione:</option>
-                            <?php
-                            $query = $mysqli->query("SELECT idtipologia, tipologia FROM tipologia");
-                            while ($rows = $query->fetch_array()) {
-                                echo '<option value="'. $rows['idtipologia'] .'">'.$rows['tipologia'].'</option>';
-                            }
-                        ?>
-                        </select>
-                        <!-- <button class="btn btn-primary" class="tipografia-calibri">Select</button> -->
-                     </div> 
-                </div>
-
-                <div class="col-md-8">
-                    <textarea readonly class="form-control" id="des_tip" rows="4"></textarea>
-                </div>
-
-                <hr>
-
-                <p class="tipografia-calibri">Seleccione un evento y los requerimientos necesarios:</p>
-                <!-- generate clasificacion checkbox, use of the [] cause php treat it like an array -->
-                <div class="row">
-                    <div class="card col-md-4 ml-3 py-3 sortable_list connectedSortable">
-
-
-                        <select id="tipologias" name="evento" class="form-control" required>
-                            <option value="" class="tipografia-calibri">Seleccione:</option>
-                            <?php
-                                        $query = $mysqli->query("SELECT idtipologia, tipologia FROM tipologia");
-                                        while ($rows = $query->fetch_assoc()) {
-                                            echo '<option value="'.$rows['tipologia'].'">'.$rows['tipologia'].'</option>';
-                                        }
-                                    ?>
-                        </select>
-
-                        <?php
-                        $query = $mysqli->query("SELECT idclasificacion,clasificacion FROM clasificacion");
-                        while ($rows = $query->fetch_array()) {
-                            echo'<div class="list-group-item checkbox"  id='.$rows['idclasificacion'].'>
-                                        
-                                        <label id="label1">
-                                        <input type="checkbox" name="requerimiento[]" id="check" value="'.$rows['clasificacion'].'">'.$rows['clasificacion'].'
-                                         </label>
-                                      
-                                </div>';
-                            }
-                    ?>
-                        <button class="btn btn-primary" type="submit" name="ingresar" class="tipografia-calibri" value="Mostrar"
-                            onclick="Mostrar()">Ingresar</button>
-            </form>
-
-        </div>
-
-        <div class="card col-md-4 ml-3 py-3 sortable_list connectedSortable"></div>
-
-    </div>
-
-    <hr>
-    <p class="pop"></p>
-
-    <hr>
-
-    <?php
-                
-                
-                if (isset($_POST['ingresar'])){
-                    $con=$_POST['evento'];
-                    echo $con;            
-                    //extrae los requerimiento seleccionados en forma de string, notar que requerimiento va sin []
-                    if (isset($_POST['requerimiento'])){                
-                    $requerimientos = implode ( ',', $_POST['requerimiento']);
-                   // echo $requerimientos;
-                    }else {
-                        echo'no ha selecionado ningun requerimiento para su evento';
-                    }        
-            
-            
-                    $query = $mysqli->query("SELECT requerimientos FROM tipologia where tipologia='$con'");
-                    $rows = $query->fetch_array();            
-                    if(isset ($requerimientos)){
-                        if($requerimientos==$rows['requerimientos']){
-                        echo 'Los requerimientos son los correctos';
-                        }else{
-                        echo 'Esos no son los requerimientos, intentalo de nuevo';
-                        }
-                    }
-            }
-    ?>
-
-    </div>
-    </div>
-
-
+                            <tr>
+                                <th scope="row" class="tipografia-calibri">Presupuesto asignado para el evento</th>
+                                <td>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">$</span>
+                                        </div>
+                                        <input name="presupuesto" id="number" min="1" required class="form-control" aria-label="Amount (to the nearest dollar)">
+                                    </div>
+                                </td>
+                            </tr>
+                 </table>
+                 <button class="btn btn-primary" type="submit" name="ingresar" class="tipografia-calibri" value="Mostrar"
+            onclick="Mostrar()">Ingresar</button><br>
+            </div>
+     <br>
+     </div>
+     <br>
 </html>

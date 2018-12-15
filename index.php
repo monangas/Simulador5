@@ -44,7 +44,7 @@
                             <a class="nav-link js-scroll-trigger" href="#services">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                            <a class="nav-link js-scroll-trigger" href="#portfolio">Portafolio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="#contact">Equipo ejecutor</a>
@@ -62,12 +62,12 @@
                 <div class="row">
                     <div class="col-lg-10 mx-auto">
                         <h1 class="text-uppercase">
-                            <strong>Desarrolla tus ideas, calcula el futuro.</strong>
+                            <strong>Desarrolla tus ideas, calcula el futuro</strong>
                         </h1>
                         <hr>
                     </div>
                     <div class="col-lg-8 mx-auto">
-                        <p class="text-faded mb-5">Proyecto Simulador Multimedia para entrenamiento de personal de Eventos y Hotelería en el área de Costos y Presupuestos.</p>
+                        <p class="text-faded mb-5">Proyecto Simulador Multimedia para Entrenamiento de Personal de Eventos y Hotelería en el Área de Costos y Presupuestos.</p>
                         <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Saber más</a>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                     <div class="col-lg-8 mx-auto text-center">
                         <h2 class="section-heading text-white">Alcance del Proyecto</h2>
                         <hr class="light my-4">
-                        <p class="text-faded mb-4">El Simulador debe ser una herramienta didáctica para mejorar las prácticas de enseñanza sobre las técnicas de costeo y presupuestales por parte del instructor en cualquier Centro de Formación del SENA. Para entrenamiento del personal en pequeñas y medianas empresas del sector y para los emprendedores.</p>
+                        <p class="text-faded mb-4">El simulador es una herramienta didáctica para mejorar las prácticas de enseñanza sobre las técnicas de costeo y presupuestales por parte del instructor en cualquier Centro de Formación del SENA, así como para el entrenamiento del personal en pequeñas y medianas empresas del sector y para los emprendedores.</p>
                         <a class="btn btn-light btn-xl" href="modulo1/index.php">Empezar</a>
                     </div>
                 </div>
@@ -102,14 +102,14 @@
                         <div class="service-box mt-5 mx-auto">
                             <i class="fas fa-4x fa-gem text-primary mb-3 sr-icon-1"></i>
                             <h3 class="mb-3">Problema</h3>
-                            <p class="text-muted mb-0">La dificultad del aprendizaje en el área de costos y presupuestos de los aprendices en la... <span style="color: #fc7323">(Click para más información)</span></p>
+                            <p class="text-muted mb-0">La dificultad de los aprendices para el aprendizaje en el área de costos y presupuestos en la... <span style="color: #fc7323">(Clic para más información)</span></p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center" data-toggle="modal" data-target="#modalObjetivo">
                         <div class="service-box mt-5 mx-auto">
                             <i class="fas fa-4x fa-paper-plane text-primary mb-3 sr-icon-2"></i>
                             <h3 class="mb-3">Objetivo</h3>
-                            <p class="text-muted mb-0">El objetivo del Simulador Multimedia es desarrollar habilidades en los aprendices de los...<span style="color: #fc7323">(Click para más información)</span></p>
+                            <p class="text-muted mb-0">El objetivo del Simulador Multimedia es desarrollar habilidades en los aprendices de los...<span style="color: #fc7323">(Clic para más información)</span></p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center" data-toggle="modal" data-target="#modalJustificacion">

@@ -25,13 +25,13 @@
         require_once '../conexion/conexionDB.php';
     ?>
 
-    <div class="container">
-        <div class="panel panel-default panel1" style="height: 600px; overflow-y: scroll">
+    <div id="imp" class="">
+        <div id="imprime" class="panel panel-default panel1" style="height: 600px; overflow-y: scroll">
             <h2  class="tipografia-zurich text-center" >PORTAFOLIO DE TRABAJO - OPC TIPO EMPRESA</h2>
-            <!-- style="display: inline;"<input readonly type="text" > -->
+            <!-- style="display: block"<input readonly type="text" > -->
             
             <hr>
-
+            <input type="button" value="imprimir" onclick="window.print('imp')" >
             <table class="table">
                 <tr>
                     <th class="tipografia-calibri">Tipolog&iacutea del Evento:</th>
@@ -55,7 +55,7 @@
                 
                 <tr>
                     <th class="tipografia-calibri">Ciudad (Municipio, Vereda) Evento:</th>
-                    <td><input readonly type="text" class="form-control" name="" id=""></td>
+                    <td><input readonly type="text" class="form-control" name="" id="" value="<?php echo $_POST['ciudad']?>"></td>
                 </tr>
                     
                 <tr>
@@ -68,10 +68,10 @@
                     <td><input readonly type="text" class="form-control" name="" id="" value="<?php echo $_POST['responsable']?>"></td>
                 </tr>
                     
-                <tr>
+                <!-- <tr>
                     <th class="tipografia-calibri">Locaci&oacuten del Evento:</th>
                     <td><input readonly type="text" class="form-control" name="" id="" value="<?php echo $_POST['locacion']?>"></td>
-                </tr>
+                </tr> -->
                 <tr>
                     <th class="tipografia-calibri">Tipo de Empresa:</th>
                     <td><input readonly type="text" class="form-control" name="" id="" value="<?php echo $_POST['tipoempresa']?>"></td>
@@ -104,7 +104,7 @@
                     $requerimientos = implode ( ',', $_POST['requerimiento']);
                     echo $requerimientos;
                     }else {
-                        echo'no ha selecionado ningun requerimiento para su evento';
+                        echo'no ha seleccionado ningún requerimiento para su evento';
                     }        
             
                     echo'<br>';
@@ -112,13 +112,14 @@
                     $rows = $query->fetch_array();            
                     if(isset ($requerimientos)){
                         if($requerimientos==$rows['requerimientos']){
-                        echo 'Los requerimientos son los correctos';
+                        echo 'Esos son los requerimientos básicos del evento';
                         }else{
-                        echo 'Esos no son los requerimientos, intentalo de nuevo';
+                        echo 'Esos no son los requerimientos básicos del evento';
                         }
                     }
             }
             ?>
+        
 </body>
 </html>
 
